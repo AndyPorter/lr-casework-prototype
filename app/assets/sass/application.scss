@@ -45,3 +45,11 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
+
+// reset to a full width (no max-widths)
+#global-header .header-wrapper,
+#global-header-bar,
+#global-cookie-message p,
+#footer .footer-wrapper {
+  max-width: none;
+}
