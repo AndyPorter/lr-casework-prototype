@@ -1,104 +1,137 @@
-{{<layout}}
+{{<layout}} {{$pageTitle}}Casework - dashboard{{/pageTitle}} {{$content}}
 
-{{$pageTitle}}Casework - dashboard{{/pageTitle}}
-
-
-{{$content}}
 <link href="/public/stylesheets/dashboard.css" media="screen" rel="stylesheet" type="text/css" />
 
 <main id="content" role="main">
-  
-<h1 class="heading-large">Case list</h1>
 
-<div class="grid-row">
+  <h1 class="heading-large">Case list</h1>
+
+  <div class="grid-row">
     <div class="column-two-thirds">
-      <p>Content</p>
 
+      <!-- THE CASE LIST -->
       <table class="casework-dashboard">
-  <thead>
-    <tr>
-      <th width="15%" scope="col">Reference</th>
-      <th width="50%" scope="col">Status</th>
-      <th width="15%" scope="col">Title No</th>
-      <th width="20%" scope="col">Received ▼</th>
-    </tr>
-  </thead>
-  <tbody>
+        <p style="margin-bottom:0; color:grey;">Packet received 22 June 2015 12:23</p></td>
 
-    <tr class="summary">
-      <td><a href="/case-dm0112-vx"><b>DM0112</b></a></td>
-      <td>no prior applications</td>
-      <td class="title-number">GM113631</td>
-      <td class="date-received">22 June 2015 12:23</td>
-    </tr>
+        <thead>
+          <tr>
+            <th width="30%" scope="col">Person</th>
+            <th width="10%" scope="col">Tasks</th>
+            <th width="30%" scope="col">Status</th>
+            <th width="20%" scope="col">Age ▼</th>
+          </tr>
+        </thead>
+        <tbody>
 
-    <tr class="summary">
-      <td><a href="/case-dm0117-vx"><b>DM0117</b></a></td>
-      <td>no prior applications</td>
-      <td class="title-number">BD161882</td>
-      <td class="date-received">22 June 2015 17:20</td>
-    </tr>
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Peterson &amp; Co</b></a></td>
+            <td>3/4</td>
+            <td>Alex is working on it</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
 
-    <tr class="summary">
-      <td><a href="/case-dm0130-vx"><b>DM0130</b></a></td>
-      <td>Bob is currently working on it
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Epic Law</b></a></td>
+            <td>0/1</td>
+            <td>You opened it today</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
 
-      <p style="margin-bottom:0; color:grey;">prior application - can proceed</p></td>
-      <td class="title-number">BD161873</td>
-      <td class="date-received">23 June 2015 7:37</td>
-    </tr>
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Jennifer Tsau</b></a></td>
+            <td>2/3</td>
+            <td>Jen opened it yesterday</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
 
-    <tr class="summary">
-      <td><a href="/case-dm0123-vx"><b>DM0123</b></a></td>
-      <td>no prior applications</td>
-      <td class="title-number">BK34490</td>
-      <td class="date-received">23 June 2015 13:43</td>
-    </tr>
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Peterson &amp; Co</b></a></td>
+            <td>3/4</td>
+            <td>Alex is working on it</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
+
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Peterson &amp; Co</b></a></td>
+            <td>3/4</td>
+            <td>Alex is working on it</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
+
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Paul Peters </b>and<b> Amed Roul</b></a></td>
+            <td>2/3</td>
+            <td>Jen opened it yesterday</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
+
+          <tr class="summary">
+            <td><a href="/case-dm0117-vx"><b>iTRW</b></a></td>
+            <td>1/2</td>
+            <td>Jen opend it yesterday</td>
+            <!-- <p style="margin-bottom:0; color:grey;">prior application - can proceed</p></td> -->
+            <td class="date-received">22 June 2015 17:20</td>
+          </tr>
+
+          <tr class="summary">
+            <td><a href="/case-dm0112-vx"><b>Epic Law</b></a></td>
+            <td>0/1</td>
+            <td>You opened it today</td>
+            <td class="date-received">22 June 2015 12:23</td>
+          </tr>
+
+          <tr class="summary">
+            <td><a href="/case-dm0117-vx"><b>Timothy Eggar</b></a></td>
+            <td>1/2</td>
+            <td>Jen opend it yesterday</td>
+            <td class="date-received">22 June 2015 17:20</td>
+          </tr>
 
 
-    <tr class="summary">
-      <td><a href="/case-dm0277-vx"><b>DM0277</b></a></td>
-      <td>no prior applications</td>
-      <td class="title-number">CL460071</td>
-      <td class="date-received">24 June 2015 9:43</td>
-    </tr>
 
-    <tr class="summary">
-      <td><a href="/official-copy-vx/BD161879"><b>DM0273</b></a></td>
-      <td>prior application - can proceed</td>
-      <td class="title-number" class="title-number">ST50539</td>
-      <td class="date-received">25 June 2015 17:20</td>
-    </tr>
-
-  </tbody>
-</table>
+        </tbody>
+      </table>
 
     </div>
     <div class="column-third">
-      <p>Content</p>
 
-      <div class="performance">
-	<h3 class="heading-small"><a href="/performance-vx">Service performance</a></h3>
-        <p><span class="headline-stat">65</span>&nbsp;&nbsp;&nbsp;<span class="level2-stat">&#x21E7; 12%</span><br>cases per day / weekly change</p>
-</div>
-
-<div class="bugs-features">
-        <h3 class="heading-small"><a href="/bugs-vx">Improvements</a></h3>
-        <p>Dev team are fixing <a href="/bugs-vx">2 bugs</a>, and <a href="/bugs-vx">broken case DM1200</a>
-        </p>
-        <ul>New features due Monday:
-        <li><a href="/bugs-vx">highlight restricitions</a></li>
-        <li><a href="/bugs-vx">show applicant estimated competion date</a></li>
+      <h2 class="heading-medium no-top-margin">People working on this list</h2>
+        <ul>
+          <li>You</li>
+          <li>Alex Chee</li>
+          <li>Jen Flosster-Riggs</li>
+          <li>Francis Italiano</li>
+          <li>Rosemary Goodman</li>
         </ul>
+        <p style="margin-bottom:0; color:grey;">5 people: this list receives 15 packets</p></td>
 
-</div>
+
+
+
+
+        <div class="performance">
+          <h3 class="heading-small"><a href="/performance-vx">Service performance</a></h3>
+          <p>
+            <span class="headline-stat">65</span>&nbsp;&nbsp;&nbsp;
+            <span class="level2-stat">&#x21E7; 12%</span>
+            <br>cases per day / weekly change</p>
+        </div>
+
+        <div class="bugs-features">
+          <h3 class="heading-small"><a href="/bugs-vx">Improvements</a></h3>
+          <p>Dev team are fixing <a href="/bugs-vx">2 bugs</a>, and <a href="/bugs-vx">broken case DM1200</a>
+          </p>
+          <ul>New features due Monday:
+            <li><a href="/bugs-vx">highlight restricitions</a></li>
+            <li><a href="/bugs-vx">show applicant estimated competion date</a></li>
+          </ul>
+
+        </div>
     </div>
-</div>
-<div></div>div>
+  </div>
+
 
 
 </main>
 
-{{/content}}
-
-{{/layout}}
+{{/content}} {{/layout}}
