@@ -1,0 +1,89 @@
+.statutory-register ol {
+  margin-left: 10px;
+}
+
+.statutory-register ol li {
+  margin-bottom: 10px;
+  font-size: 100%;
+ /* position: relative; */
+  color: #202020;
+}
+
+span.property-address {
+  font-weight: 400;
+  color:#000000;
+}
+
+span.proprietor-name {
+  font-weight: 400;
+}
+
+span.proprietor-address {
+  font-weight: 400;
+}
+
+span.pp-date {
+  font-weight: 400;
+}
+
+span.pp-amount {
+  font-weight: 400;
+}
+
+span.entry-date {
+  font-size: 16px;
+  color: #808080;
+/*  position:absolute;
+  bottom: 0;
+  right: 0; */
+  float:right;
+  padding-top: 3px;
+}
+
+span.entry-date::before {
+  content: " [";
+}
+
+span.entry-date::after {
+  content: "]";
+}
+
+span.entry-accepted-1, span.entry-accepted-2 {
+  display: none;
+  font-size: 19px;
+  color: #000000;
+  font-weight: 800;
+  background-color: #6aa121;
+  padding: 0 5px;
+  float:right;
+  text-align: top;
+}
+
+span.entry-accepted-b1 {
+  display: none;
+  font-size: 19px;
+  color: #000000;
+  font-weight: 800;
+  background-color: #6aa121;
+  padding: 0 5px;
+  float:right;
+  text-align: top;
+}
+
+.headline-stat {
+  font-size: 76px;
+}
+
+.level2-stat {
+  font-size: 36px;
+  color: grey;
+}
+
+td.date-received, td.title-number {
+  font-size: 16px;
+}
+
+.summary-completed td {
+  color:grey;
+  font-size: 85%;
+}
