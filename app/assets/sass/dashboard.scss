@@ -91,3 +91,27 @@ td.date-received, td.title-number {
 .no-top-margin {
   margin-top: 0;
 }
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-footnote {
+  margin-bottom:0;
+  color:grey;
+}
+
+.done-row {
+  background-color: #DEE0E2;
+}
+
+.finished-text {
+  color: #006435;
+  font-weight: bold;
+}
+
+.unopened-text {
+  color: #AF1324;
+  font-weight: bold;
+}
