@@ -1,12 +1,16 @@
-# GOV.UK Prototyping Kit
+# Casework Prototyping Kit
 
-The kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
+The kit provides a simple way to make interactive prototypes that look like pages on GOV.UK, or for internal use. These prototypes can be used to show ideas to people you work with, and to do user research.
 
 It's built on the [Express](http://expressjs.com/) framework, and uses these GOV.UK resources:
 
 - [GOV.UK template](https://github.com/alphagov/govuk_template)
 - [GOV.UK front end toolkit](https://github.com/alphagov/govuk_frontend_toolkit)
 - [GOV.UK elements](https://github.com/alphagov/govuk_elements)
+
+It also contains an unbranded govuk base template
+
+And contains templates with a bootstrap and fontawseome base
 
 Read the [project principles](docs/principles.md).
 
