@@ -10,6 +10,9 @@ module.exports = {
     });
 
     // add your routes here
+    app.get('/index-MS', function (req, res) {
+      res.render('index-MS', { 'title' : 'Matts Land Registry Prototype Kit' });
+    });
 
   }
 };
