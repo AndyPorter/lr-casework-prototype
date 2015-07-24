@@ -1,7 +1,7 @@
-{{<layout}}
+{{<unbranded_template}}
 
 {{$pageTitle}}
-	GOV.UK prototyping kit
+	Casework Prototyping kit
 {{/pageTitle}}
 
 {{$homepageUrl}}/{{/homepageUrl}}
@@ -9,18 +9,42 @@
 {{$content}}
 
 <main id="content" role="main">
-
-	<h1 class="heading-xlarge">Welcome to the GOV.UK prototyping kit</h1>
+	<h1 class="heading-xlarge">Welcome to the Casework prototyping kit</h1>
 	<!-- feel free to change this page to suit your needs -->
 
 	<p>This is the index.html page - we recommend you put links to key pages here.</p>
 
-	<h2 class="heading-large">Pages</h2>
-
+	<h3 class="heading-medium">To Do</h3>
 	<ul>
-		<li><a href="/casework/dashboard">Casework - dashboard</a></li>
-		<li><a href="/casework/case">Casework - case</a></li>
-		<li><a href="/casework/title">Casework - title</a></li>
+		<li>restyle this page</li>
+		<li>update readme (in this proto, and on github)</li>
+		<li>strip out unneccessary govuk stuff (carefully) in tandem with making unbranded better</li>
+		<li>strip govuk branding from pages for internal pages/information pages in this app</li>
+		<li>if this kit works, bring older/other protos here (we have bootstrap and gov base protos), so we have history / record of all other awesome/crazy ideas in one place</li>
+	</ul>
+
+	<h3 class="heading-medium">Intro</h3>
+	<ul>
+		<li>Static pages (html) - no need to add routes - auto routes to every html page in app\ and app\views</li>
+		<li>Pass data into view - add route to app\routes.js
+		<li>make a new distinct 'thing' e.g. app, version of a proto, etc, by adding a folder to app\views</li>
+		<li>started here with two different styles and apps (Andy and Matt) so we can quickly get started making 'real things', not working on the kit</li>
+	</ul>
+
+	<h2 class="heading-large">Protos</h2>
+
+	<h3>Casework proto(s) (new - 24th July onward)</h3>
+	<p>Aim: making one proto. Current: two places to get quickly started from</p>
+	<ul>
+		<li><a href="index-AP">Casework - Andy P starting point (unbranded govuk base - will be soon)</a></li>
+		<li><a href="index-MS">Casework - Matt S starting point (bootstrap base)</a></li>
+	</ul>
+
+	<h3>Older - Casework Jam (Mat J, Clara, Andy P)</h3>
+	<ul>
+		<li><a href="/casework-jam/dashboard">Casework - dashboard</a></li>
+		<li><a href="/casework-jam/case">Casework - case</a></li>
+		<li><a href="/casework-jam/title">Casework - title</a></li>
 	</ul>
 
 	<ul>
@@ -31,26 +55,9 @@
 
 	<h2 class="heading-large">Resources</h2>
 
-	<ul class="list-bullet">
+	<ul>
 		<li>
-			<a href="https://github.com/alphagov/govuk_prototype_kit/docs">
-				GOV.UK kit documentation
-			</a>
-		</li>
-		<li>
-			<a href="http://govuk-elements.herokuapp.com/snippets/">
-				Guide to GOV.UK elements HTML
-			</a>
-		</li>
-		<li>
-			<a href="https://www.gov.uk/service-manual">
-				Service design manual
-			</a>
-		</li>
-		<li>
-			<a href="https://www.gov.uk/design-principles">
-				Government Digital Service Design Principles
-			</a>
+			<a href="">Add useful links :)</a>
 		</li>
 	</ul>
 
@@ -58,4 +65,4 @@
 
 {{/content}}
 
-{{/layout}}
+{{/unbranded_template}}
