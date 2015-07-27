@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: kuzGhhwJ8WDBJ3MBiIYrCq31PhZgRoqU9R8JBNj6F7CdznNkAS6nsf3Pe9rdqg0z7013JdKFMqFJ4Ax5zzId+rE//nIf1Gn9OTH7/cNbITNWxsQrP0spXowLvxHzYe8Dc/vWTabD6XHsTPnjcA7ne+UlyBLwfbjlPmc54RjA3OqahM9sCk5V4gsmS2jtcdCNpYXKRIzq0BKekbwqRC36t3tn8kOy66kg7aJdKhruWcP7Otjx6/mBuqEjNADenhazwy/PtwNXr0kbcCqIAqJjQVc8Jh1qaAmcsEABcjP3EJ/R5SJV/a9YVArL//dDbP3Byp7rXaVuaF0o67/omVBCNOhtj3yiup2iMBXE1HklOM9h9Ab9muk/4FfbUsi2HugXCvFU8IRKk97WFVe3tTNhaSg8J0mts4lA0pm6OFip+H/UsYyLqtcIRxOAlRNWXRrwW6raS1B5l94EvBMqhsnFSq/0fuLMCG0pMcb4Gxim3EO08dfZOgtsY3WJh+AZR/Uhrz55FLX8IijRpQ+iX6Dos6KHo4G7xmqRFpL2lN4SdZOU0ovV2Rqy+ejmJra/a2JFTr4oNkw4OCdNiCdbpfTgeN3m2oDiXxCasCwD7kUbniBxS1g1WoxD5BtBbLlG4z3aI5n6iwqQtcTruqj+K2ApBNm9wHgh8P0eVBlxObCDwMs=
+  app: lr-casework-prototype
+  on:
+    repo: LandRegistry/lr-casework-prototype
+    branch: master
