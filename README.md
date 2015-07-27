@@ -35,7 +35,7 @@ Install Node.js (see requirements)
 #### Clone this repo
 
 ```
-git clone git@github.com:alphagov/govuk_prototype_kit.git
+git clone https://github.com/LandRegistry/lr-casework-prototype.git
 ```
 
 #### Install dependencies
@@ -72,4 +72,3 @@ Find out how to work with the prototyping application.
 * [Tips and Tricks](docs/tips-and-tricks.md)
 
 This project is built on top of Express, the idea is that it is straightforward to create simple static pages out of the box. However, you're not limited to that - more dynamic sites can be built with more understanding of Express. Here's a good [Express tutorial.](http://code.tutsplus.com/tutorials/introduction-to-express--net-33367)
-
