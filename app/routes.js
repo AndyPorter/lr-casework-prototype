@@ -14,5 +14,13 @@ module.exports = {
       res.render('index-MS', { 'title' : 'Material Prototype Kit' });
     });
 
+    app.get('/casework-MS/cases', function (req, res) {
+      res.render('casework-MS/cases', { 'title' : 'Cases' });
+    });
+
+    app.get('/casework-MS/case', function (req, res) {
+      res.render('casework-MS/case', { 'title' : 'Case' });
+    });
+
   }
 };
