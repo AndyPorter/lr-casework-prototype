@@ -5,18 +5,29 @@
 {{/pageTitle}}
 
 {{$body}}
+  <br/>
+  <div class="panel panel-default text-center">
+    <div class="panel-body">
+      <h1>{{ title }}<br/>
+        <small>Welcome to {{ title }}</small>
+      </h1>
+    </div>
+  </div>
 
-	<div class="jumbotron">
-	  <h1>{{ title }}</h1>
-	  <p>Welcome to {{ title }}</p>
-	</div>
-
-	<ul>
-		<li><a href="/index">Top Index page</a></li>
-		<li><a href="/casework-MS/cases">Cases</a></li>
-		<li><a href="/casework-MS/case">Case</a></li>
-	</ul>
-
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Pages</h3>
+        </div>
+        <div class="list-group">
+          <a href="/index" class="list-group-item">Top Index page</a>
+          <a href="/casework-MS/cases" class="list-group-item">Cases</a>
+          <a href="/casework-MS/case" class="list-group-item">Case</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {{/body}}
 
