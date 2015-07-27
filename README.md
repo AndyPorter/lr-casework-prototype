@@ -35,7 +35,7 @@ Install Node.js (see requirements)
 #### Clone this repo
 
 ```
-git clone https://github.com/LandRegistry/lr-casework-prototype.git .
+git clone https://github.com/LandRegistry/lr-casework-prototype.git
 ```
 
 #### Install dependencies
