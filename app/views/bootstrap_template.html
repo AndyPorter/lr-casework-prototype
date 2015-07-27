@@ -19,6 +19,8 @@
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
   .footer {
     position: absolute;
@@ -34,9 +36,6 @@
   -------------------------------------------------- */
   /* Not required for template or sticky footer method. */
 
-  body > .container {
-    padding: 60px 15px 0;
-  }
   .container .text-muted {
     margin: 20px 0;
   }
@@ -50,6 +49,14 @@
 <body>
   <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
   {{$nav}}{{/nav}}
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="container">
+        <h2>{{ title }}</h2>
+      </div>
+    </div>
+  </div>
+
   <div class="container" id="content" tabindex="-1">
     {{$body}}{{/body}}
   </div>
