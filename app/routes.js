@@ -19,7 +19,7 @@ module.exports = {
     });
 
     app.get('/casework-MS/case', function (req, res) {
-      res.render('casework-MS/case', { 'title' : 'Case' });
+      res.render('casework-MS/case', { 'title' : 'Case', 'ref' : 'REF0001', 'type' : 'Mortgage' });
     });
 
   }

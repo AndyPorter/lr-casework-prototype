@@ -49,13 +49,7 @@
 <body>
   <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
   {{$nav}}{{/nav}}
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <div class="container-fluid">
-        <h2>{{ title }}</h2>
-      </div>
-    </div>
-  </div>
+  {{$heading}}{{/heading}}
 
   <div class="container-fluid" id="content" tabindex="-1">
     {{$body}}{{/body}}

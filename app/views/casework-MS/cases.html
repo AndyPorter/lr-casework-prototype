@@ -4,29 +4,41 @@
 Cases
 {{/pageTitle}}
 
+{{$heading}}
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="container-fluid">
+      <h3><i class="fa fa-briefcase fa-fw"></i> {{ title }}</h3>
+    </div>
+  </div>
+</div>
+{{/heading}}
+
 {{$body}}
 <div class="panel panel-default table-responsive">
-  <div class="panel-heading">
-    <h3 class="panel-title">Case List</h3>
+  <div class="list-group">
+    <div class="list-group-item">
+      <h5 class="list-group-item-heading"><i class="fa fa-list fa-fw"></i> Case List</h5>
+    </div>
+    <div class="list-group-item">
+      <p>These are the current cases your team is working on:</p>
+    </div>
   </div>
-  <div class="panel-body">
-    <p>These are the current cases your team is working on:</p>
-  </div>
-
+  
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Reference</th>
-        <th>Type</th>
-        <th>Tasks</th>
-        <th>Progress</th>
-        <th>Person</th>
-        <th>Age</th>
+        <th><i class="fa fa-sort fa-fw"></i> Reference</th>
+        <th><i class="fa fa-sort fa-fw"></i> Type</th>
+        <th><i class="fa fa-sort fa-fw"></i> Tasks</th>
+        <th><i class="fa fa-sort fa-fw"></i> Progress</th>
+        <th><i class="fa fa-sort fa-fw"></i> Person</th>
+        <th><i class="fa fa-sort fa-fw"></i> Age</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><a href="#">REF0001</a></th>
+        <th scope="row"><a href="/casework-MS/case/">REF0001</a></th>
         <td>Mortgage</td>
         <td><span class="badge">4</span></td>
         <td>
@@ -40,7 +52,7 @@ Cases
         <td><p class="text-warning">49 minutes</p></td>
       </tr>
       <tr>
-        <th scope="row"><a href="#">REF0033</a></th>
+        <th scope="row"><a href="/casework-MS/case/">REF0033</a></th>
         <td>Mortgage</td>
         <td><span class="badge">5</span></td>
         <td>
@@ -54,7 +66,7 @@ Cases
         <td><p class="text-danger">8 hours</p></td>
       </tr>
       <tr>
-        <th scope="row"><a href="#">REF0021</a></th>
+        <th scope="row"><a href="/casework-MS/case/">REF0021</a></th>
         <td>Mortgage</td>
         <td><span class="badge">3</span></td>
         <td>
