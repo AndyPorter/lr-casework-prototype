@@ -4,21 +4,40 @@
   {{ title }}
 {{/pageTitle}}
 
+{{$heading}}
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="container-fluid">
+      <h3>{{ title }}</h3>
+    </div>
+  </div>
+</div>
+{{/heading}}
+
 {{$body}}
-  <div class="row">
-    <div class="col-md-4">
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Pages</h3>
-        </div>
         <div class="list-group">
-          <a href="/index" class="list-group-item">Top Index page</a>
-          <a href="/casework-MS/cases" class="list-group-item">Cases</a>
+          <div class="list-group-item">
+            <h5 class="list-group-item-heading">About</h5>
+          </div>
+          <div class="list-group-item">
+            <h5>These prototypes work on any <i class="fa fa-mobile fa-fw"></i>, <i class="fa fa-tablet fa-fw"></i>, <i class="fa fa-laptop fa-fw"></i> or <i class="fa fa-desktop fa-fw"></i> running <i class="fa fa-windows fa-fw"></i>, <i class="fa fa-apple fa-fw"></i> or <i class="fa fa-android fa-fw"></i> thanks to <i class="fa fa-html5 fa-fw"></i> and <i class="fa fa-css3 fa-fw"></i>.</h5>
+            <h5>Fueled by <i class="fa fa-coffee fa-fw"></i> and <i class="fa fa-spotify fa-fw"></i>.</h5>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="list-group">
+          <div class="list-group-item">
+            <h5 class="list-group-item-heading">Pages</h5>
+          </div>
+          <a href="/casework-MS/cases" class="list-group-item">Case List</a>
           <a href="/casework-MS/case" class="list-group-item">Case</a>
         </div>
       </div>
-    </div>
-  </div>
+
 
 {{/body}}
 
