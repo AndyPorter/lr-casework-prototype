@@ -11,33 +11,52 @@
 
       <div class="grid-row">
 
-      <h1>Case 12345</h1>
+      <h1 class="visuallyhidden">Case 12345</h1>
 
         <div class="column-third">
 
-            <h3 class="heading-medium">digital mortgage application dm12345</h3>
+            <h2 class="heading-medium col-top">digital mortgage application eMort225</h2>
 
             <p>No prior applications against this title (daylist is clear)</p>
             
-            <p>mortgage deed has been electronically signed and all application details have been verified (no action required from you)</p>
-            <p>new version of register has been automatically drafted (to include the new mortgage details)</p>
-            <p class="task">Please check the register for anything that will stop you from completing this case.</p>
-<!--             <p class="task">Please complete this case, unless there is something wrong with the register.</p>
+            <p>Mortgage deed has been electronically signed and all application details have been verified (no action required)</p>
+            <p>New version of register has been automatically drafted</p>
 
-            <hr>
-            <p><a href="">I'm not sure if i can complete this case/application</a></p>
-            <button class="red button">i cannot complete this case</button>
-            <button type="submit" class="button">complete case</button>
+<!--             <hr>
+            <p><a href="">I'm not sure if i can complete this case/application</a></p> -->
 
- -->
+<form>
+<fieldset class="inline">
+    <legend>
+      <span class="form-label-bold">
+        Please check the register for anything that will stop you from accepting the application.
+      </span>
+    </legend>
+    <label class="block-label" for="radio-inline-1">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="register correct">
+      This register is correct
+    </label>
+    <label class="block-label" for="radio-inline-2" data-target="register-problem">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="register incorrect">
+      There is a problem with this register
+    </label>
+    <div class="panel-indent js-hidden" id="register-problem">
+      <label class="form-label" for="nature-of-register-problem">Describe the problem</label>
+      <textarea class="form-control" style="width:100%" id="nature-of-register-problem"></textarea>
+    </div>
+  </fieldset>
+  <button class="button">Complete application</button>
+  <button class="disabled button">Store application</button>
+</form>
+
 
         </div> <!-- column-third -->
 
 
         <div class="column-two-thirds">
-			<h2 class="titleNumber">DT521362</h2>
+			<h2 class="heading-medium col-top">DT521362</h2>
 
-			<h3 class="heading-medium">A register</h3>
+			<h3 class="heading-medium col-top">A register</h3>
 			<p class="district">NEWHAM</p>
 			<ol>
 				<li>
@@ -95,6 +114,13 @@
 						<p><span class="entry-date">(14.11.2014)</span> RESTRICTION: No disposition of the registered estate (other than a charge) by the proprietor of the registered estate is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 31 October 2014 in favour of Virgin Money PLC referred to in the Charges Register.</p>
 					</entry>
 				</li>
+				<!-- this b reg entry is added by our Shawbrook mortgage application -->  
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-b">proposed b entry</a></h3>
+				<li>
+					<entry class="new">
+					    <p>RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 13 June 2015 in favour of SHAWBROOK BANK LIMITED referred to in the Charges Register.</p>
+			    	</entry>
+			    </li>
 			</ol>
 
 			<h3 class="heading-medium">C register</h3>
@@ -109,6 +135,18 @@
 						<p><span class="entry-date">(14.11.2014)</span> Proprietor: VIRGIN MONEY PLC (Co. Regn. No. 6952311) of Jubilee House, Gosforth, Newcastle upon Tyne NE3 4PL.</p>
 					</entry>
 				</li>
+				<!-- these two c reg entries are added by the mortgage application -->
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-c">proposed c entries</a></h3> 
+				<li>
+					<entry class="new">
+						<p>REGISTERED CHARGE dated 13 June 2015.</p>
+					</entry>
+				</li>
+				<li>
+					<entry class="new">
+						<p>Proprietor: SHAWBROOK BANK LIMITED (Co. Regn. No. 388466) of Lutea House, Warley Hill Business Park, The Drive, Great Warley, Brentwood, Essex CM13 8BE.</p>
+					</entry>
+				</li>	
 			</ol>
 
 
@@ -120,6 +158,8 @@
 
 </main>
 
+
 {{/content}}
+
 
 {{/unbranded}}
