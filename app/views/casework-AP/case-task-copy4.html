@@ -15,9 +15,9 @@
 
         <div class="column-third">
 
-            <h2 class="heading-medium col-top">digital mortgage application DM12345</h2>
+            <h2 class="heading-medium col-top">digital mortgage application eMort224</h2>
 
-            <p>No prior applications against this title (daylist is clear)</p>
+            <p>No prior applications against title DT521362 (daylist is clear)</p>
             
             <p>Mortgage deed has been electronically signed and all application details have been verified (no action required)</p>
             <p>New version of register has been automatically drafted</p>
@@ -26,27 +26,31 @@
             <p><a href="">I'm not sure if i can complete this case/application</a></p> -->
 
 <form>
-<fieldset class="inline">
-    <legend>
-      <span class="form-label-bold">
-        Please check the register for anything that will stop you from accepting the application.
-      </span>
-    </legend>
-    <label class="block-label" for="radio-inline-1">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="register correct">
-      This register is correct
-    </label>
-    <label class="block-label" for="radio-inline-2" data-target="register-problem">
-      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="register incorrect">
-      There is a problem with this register
-    </label>
-    <div class="panel-indent js-hidden" id="register-problem">
-      <label class="form-label" for="nature-of-register-problem">Describe the problem</label>
-      <input class="form-control" type="text" id="nature-of-register-problem">
-    </div>
-  </fieldset>
-  <button class="button">Complete application</button>
+	<fieldset class="inline">
+	    <legend>
+	      <span class="form-label-bold">
+	        Please complete the application unless there is something wrong with the draft register.
+	      </span>
+	    </legend>
+	  </fieldset>
+	  <button class="button">Complete application</button>
+	</form>
+	<br>
+	<br>
+
+	<fieldset>
+	    <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
+	    	<input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
+	        There is something preventing this application being applied.
+	    </label>
+	    <div class="panel-indent js-hidden" id="cant-complete-reason">
+	      <label class="form-label" for="complete-problem">Please describe</label>
+	      <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
+	    </div>
+	  </fieldset>
+  <button class="button">Store application</button>
 </form>
+
 
 
         </div> <!-- column-third -->
@@ -55,7 +59,7 @@
         <div class="column-two-thirds">
 			<h2 class="heading-medium col-top">DT521362</h2>
 
-			<h3 class="heading-medium">A register</h3>
+			<h3 class="heading-medium col-top">A register</h3>
 			<p class="district">NEWHAM</p>
 			<ol>
 				<li>
