@@ -15,17 +15,12 @@
 {{/heading}}
 
 {{$body}}
-<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <p class="lead">You completed <a href="#" class="alert-link">Task #1 - Review draft register entries</a>.</p>
-</div>
-
 <div class="row">
   <!-- Left column -->
   <div class="col-sm-9">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="narrative">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-quote-right fa-fw"></i> Narrative</h5>
@@ -40,7 +35,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="tasks">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-tasks fa-fw"></i> Tasks</h5>
@@ -64,12 +59,15 @@
               </tr>
             </tbody>
           </table>
+          <div class="panel-body">
+            <button type="button" class="btn btn-default btn-lg pull-right" disabled="disabled">Finish <i class="fa fa-chevron-right fa-fw fa-lg"></i></button>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="evidence">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-files-o fa-fw"></i> Evidence</h5>
@@ -104,7 +102,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default table-responsive">
+        <div class="panel panel-default table-responsive" id="parties">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-users fa-fw"></i> Parties</h5>
@@ -129,20 +127,17 @@
         </div>
       </div>
     </div>
-
-
-    <button type="button" class="btn btn-default btn-lg" disabled="disabled"><i class="fa fa-check fa-fw fa-lg"></i> Complete Case</button>
   </div>
   <!-- Right column -->
   <div class="col-sm-3">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="activity">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-history fa-fw"></i> Activity</h5>
             </div>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw"></i> Case Received<br/><i class="fa fa-check fa-fw text-success"></i> Daylist clear<br/><i class="fa fa-times fa-fw text-danger"></i> Failed Validation</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw"></i> Case Received<br/><i class="fa fa-check fa-fw text-success"></i> Daylist Clear<br/><i class="fa fa-times fa-fw text-danger"></i> Failed Validation</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw"></i> <a href="#">Sarah Coleman</a> commented: "Consent of Virgin Money PLC was not attached. Have queried with Emma Thomas at Epic Law and she has now attached to the case, see evidence."</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw"></i> Consent Letter received from Epic Law</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:40</strong><br/><i class="fa fa-check fa-fw text-success"></i> Passed Validation</li>
