@@ -17,7 +17,7 @@
 {{$body}}
 <div class="alert alert-success alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <p class="lead">You completed <a href="#" class="alert-link">Task #1 - Review draft register entries</a>.</p>
+  <p class="lead">You completed <a href="#" class="alert-link">Task #1: Review draft register entries</a>.</p>
 </div>
 
 <div class="row">
@@ -25,7 +25,7 @@
   <div class="col-sm-9">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="narrative">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-quote-right fa-fw"></i> Narrative</h5>
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="tasks">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-tasks fa-fw"></i> Tasks</h5>
@@ -56,20 +56,23 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="success">
                 <td>1</td>
                 <td>Review draft register entries</td>
-                <td>-</td>
-                <td><a class="btn btn-success pull-right" href="/casework-MS/task/" role="button">Start <i class="fa fa-chevron-right fa-fw fa-lg"></i></a></td>
+                <td>You</td>
+                <td class="text-right"><i class="fa fa-check fa-fw fa-lg"></i> Completed</td>
               </tr>
             </tbody>
           </table>
+          <div class="panel-body">
+            <a  class="btn btn-success btn-lg pull-right" href="/casework-MS/cases2/">Finish Case <i class="fa fa-chevron-right fa-fw fa-lg"></i></a>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="evidence">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-files-o fa-fw"></i> Evidence</h5>
@@ -89,13 +92,15 @@
                 <td><i class="fa fa-file-pdf-o fa-fw fa-2x"></i> PDF</td>
                 <td>Scanned Deed</td>
                 <td>24/07/2015 13:37:01</td>
-                <td><button type="button" class="btn btn-primary pull-right"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
+                <td>Epic Law</td>
+                <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#deedModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
               </tr>
               <tr>
                 <td><i class="fa fa-file-pdf-o fa-fw fa-2x"></i> PDF</td>
                 <td>Consent Letter</td>
                 <td>24/07/2015 14:25:34</td>
-                <td><button type="button" class="btn btn-primary pull-right"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
+                <td>Epic Law</td>
+                <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#consentModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
               </tr>
             </tbody>
           </table>
@@ -104,7 +109,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default table-responsive">
+        <div class="panel panel-default table-responsive" id="parties">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-users fa-fw"></i> Parties</h5>
@@ -129,50 +134,75 @@
         </div>
       </div>
     </div>
-
-
-    <button type="button" class="btn btn-default btn-lg" disabled="disabled"><i class="fa fa-check fa-fw fa-lg"></i> Complete Case</button>
   </div>
   <!-- Right column -->
   <div class="col-sm-3">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" id="activity">
           <div class="list-group">
             <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-history fa-fw"></i> Activity</h5>
             </div>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw"></i> Case Received</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:04</strong><br/><i class="fa fa-check fa-fw text-success"></i> Daylist clear</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:04</strong><br/><i class="fa fa-times fa-fw text-danger"></i> Failed Validation</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw"></i> Sarah Coleman Commented</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw"></i> Evidence Received</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw"></i> Case Received<br/>
+              <i class="fa fa-files-o fa-fw"></i> Scanned Deed received<br/>
+              <i class="fa fa-check fa-fw text-success"></i> Daylist Clear<br/>
+              <i class="fa fa-times fa-fw text-danger"></i> Failed Validation
+            </li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw"></i> <a href="#">Sarah Coleman</a> commented: "Consent of Virgin Money PLC was not received. Have queried with Emma Thomas at Epic Law."</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw"></i> Consent Letter received</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:40</strong><br/><i class="fa fa-check fa-fw text-success"></i> Passed Validation</li>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default">
-          <div class="list-group">
-            <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-comments-o fa-fw"></i> Comments</h5>
-            </div>
-            <div class="list-group-item">
-              <strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:01:24<br/>
-              <a href="#"><i class="fa fa-user fa-fw"></i> Sarah Coleman</a>:</strong> "Consent of Virgin Money PLC was not attached. Have queried with Emma Thomas at Epic Law and she has now attached to the case, see evidence."
-            </div>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:53:12</strong><br/><i class="fa fa-tasks fa-fw"></i> You completed Task #1: Review draft register entries</li>
           </div>
           <div class="panel-body">
             <form>
               <div class="form-group">
-                <textarea class="form-control" rows="2"></textarea>
+                <textarea class="form-control" rows="2" placeholder="Comment"></textarea>
               </div>
               <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-comment-o fa-fw fa-lg"></i> Add comment</button>
             </form>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modals -->
+<div class="modal fade" id="deedModal" tabindex="-1" role="dialog" aria-labelledby="deedModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deedModalLabel">Scanned Deed</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://img.docstoccdn.com/thumb/orig/74856253.png" alt="Scanned Deed" width="580px">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="consentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="consentModalLabel">Consent Letter</h4>
+      </div>
+      <div class="modal-body">
+        <p>Dear Ms Thomas</p>
+        <p>Thank you for your letter dated 20/07/2015</p>
+        <p>In connection with the charge restriction registered in our favour we write to confirm that we are more than happy to consent to the second mortgage to Mr Graham Jacob Jones dated 13/06/2015</p>
+        <p>Regards,</p>
+        <p>Virgin Money PLC</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
