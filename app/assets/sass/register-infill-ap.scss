@@ -1,0 +1,203 @@
+/* register specific styling */
+
+/* to do */
+/* 
+
+span classes without specific styling
+amount
+chargedate
+chargeproprietor
+
+
+
+make titlenumber a hyperlink to next title
+
+
+what to do about nested spans?  nothing for now.
+deedextent contains plansreference
+notnote contains titlenumber
+*/
+
+
+/* register sections / wells */
+
+#a_reg, #b_reg, #c_reg, #u_reg {
+	/* nothing needed yet */
+}
+
+/* END wells */
+
+
+/* entries */
+
+.entry_list_sub_A, .entry_list_sub_H, .entry_list_sub_M, .entry_list_sub_P, .entry_list_sub_R, .entry_list_sub_T, .entry_list_sub_Z {
+	/* entries inside the A register */
+}
+
+.entry_list_sub_B, .entry_list_sub_X {
+	/* entries inside the B register */
+}
+
+.entry_list_sub_C {
+	/* entries inside the C register */
+}
+
+.entry_list_sub_D, .entry_list_sub_F, .entry_list_sub_L, .entry_list_sub_W, .entry_list_sub_Y, .entry_list_sub_S {
+	/* entries inside the C register */
+	/* give them some further styling so they stand out */
+	
+	/* white well */
+	background-color:#ffffff;
+	margin:1em 0 1em 0;
+	padding:0.1em 1em 0.5em 2.8em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* END entries */
+
+
+/* infill / entry elements */
+
+span {
+	/* highlight all spans - override with specific styles below */
+
+	/* yellow to highlight any specific instances we've missed */
+	background-color: #FFFF00; 
+	color: black;
+	font-weight: 600;
+	text-decoration:none
+}
+
+
+span.entrydate {
+	background-color: transparent;
+	color: #CC6633;
+	font-weight: 600;
+}
+
+span.freeformat{
+	background-color: transparent;
+	color: black;
+	font-weight: 600;
+}
+
+span.plansreference{
+	background-color: transparent;
+	color: #0099CC;
+	font-weight: 600;
+}
+
+span.deedextent{
+	background-color: transparent;
+	color: #339933;
+	font-weight: 600;
+}
+
+span.titlelistheading {
+	background-color: transparent;
+	font-weight: normal;
+}
+
+span.titlenumber {
+	background-color: transparent;
+	font-weight: normal;
+}
+
+span.titlenumber a{
+	color: blue;
+	text-decoration:underline;
+}
+
+span.careofname{
+	background-color: transparent;
+	color: #003333;
+	font-weight: 600;
+}
+	
+span.name {
+	background-color: transparent;
+	color: green;
+	font-weight: 600;
+}
+
+span.address {
+	background-color: transparent;
+	color: blue;
+	font-weight: 600;
+}
+
+span.extentofland {
+	background-color: transparent;
+	color: pink;
+	font-weight: 600;
+}
+
+span.deedtype {
+	background-color: transparent;
+	color: brown;
+	font-weight: 600;
+}
+
+span.deeddate {
+	background-color: transparent;
+	color: purple;
+	font-weight: 600;
+}
+
+span.date {
+	background-color: transparent;
+	color: red;
+	font-weight: 600;
+}
+
+span.deedparties {
+	background-color: transparent;
+	color: green;
+	font-weight: 600;
+}
+
+span.note {
+	background-color: transparent;
+	color: purple;
+	font-weight:normal;
+}
+
+span.notnote {
+	background-color: transparent;
+	color: purple;
+	font-weight:normal;
+	font-style:italic;
+}
+
+span.centre {
+	background-color: transparent;
+	text-align: center;
+	font-weight:normal;
+	display: block;
+}
+
+span.unreadable {
+	background-color: transparent;
+	border: none;
+	font-size: 2px;
+	border-top:dotted 3px #333;
+	display: block;
+}
+
+/* END infill / entry elements */
+
+/* in document functions */
+
+div.linkedRegisterList ul {
+	list-style-type: none;
+}
+
+div.nav_well {
+	background-color:#ffffff;
+	margin:1em 0 1em 0;
+	padding:0.1em 1em 0.5em 2.8em;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+/* END - in document functions */
