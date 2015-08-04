@@ -1,6 +1,9 @@
-{{<unbranded}}
+{{<internal_gov}}
 
 {{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/casework-AP/list" id="proposition-name">digital mortgage applications</a> <span id="proposition-name"> : dMort0112</span>
+{{/propositionHeader}}
+
 
 {{$content}}
 <link href="/public/stylesheets/casework-shame-ap.css" media="screen" rel="stylesheet" type="text/css" />
@@ -15,43 +18,48 @@
 
         <div class="column-third">
 
-            <h2 class="heading-medium col-top">digital mortgage application eMort221</h2>
+
+
+            <!-- <h2 class="heading-medium col-top">application dMort0112</h2> -->
 
             <p>No prior applications against this title (daylist is clear)</p>
             
-            <p>Mortgage deed has been electronically signed and all application details have been verified</p>
-            <p>New version of register has been automatically drafted</p>
+            <p>Mortgage deed has been digitally signed and all application details have been verified (no checks needed)</p>
+            <p>New version of the register has been automatically drafted</p>
 
 
+<form action="/casework-AP/list" method="get">
+	<fieldset class="inline">
+	    <legend>
+	      <span class="form-label-bold">
+	        If there are no problems with this draft register, please complete.
+	      </span>
+	    </legend>
+	  </fieldset>
+	  <button type="submit" id="complete-button" class="button">Complete</button>
+</form>
+	<br>
+	<br>
 
-<form>
-<fieldset class="inline">
-    <legend>
-      <span class="form-label-bold">
-        Please accept this register, unless there is something wrong with it.
-      </span>
-    </legend>
-    <label class="block-label" for="radio-inline-1">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="register correct">
-      This register is correct
-    </label>
-    <label class="block-label" for="radio-inline-2" data-target="register-problem">
-      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="register incorrect">
-      There is a problem with this register
-    </label>
-    <div class="panel-indent js-hidden" id="register-problem">
-      <label class="form-label" for="nature-of-register-problem">Describe the problem</label>
-      <textarea class="form-control" style="width:100%" id="nature-of-register-problem"></textarea>
-    </div>
-  </fieldset>
-  <button class="button">Complete application</button>
+<form action="/casework-AP/list" method="get">
+	<fieldset>
+	    <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
+	    	<input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
+	        There are problems that need to be resolved
+	    </label>
+	    <div class="panel-indent js-hidden" id="cant-complete-reason">
+	      <label class="form-label" for="complete-problem">Please describe</label>
+	      <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
+	    </div>
+	  </fieldset>
+  <button type="cancel" id="store-button" class="disabled button">Store application</button>
 </form>
 
         </div> <!-- column-third -->
 
 
         <div class="column-two-thirds">
-			<h2 class="heading-medium col-top">DT521362</h2>
+			<h2 class="heading-medium col-top">DT521362 - draft register</h2>
 
 			<h3 class="heading-medium col-top">A register</h3>
 			<p class="district">NEWHAM</p>
@@ -157,4 +165,24 @@
 
 {{/content}}
 
-{{/unbranded}}
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>
