@@ -14,25 +14,46 @@ module.exports = {
       res.render('index-MS', { 'title' : 'Material Prototype Kit' });
     });
 
-    app.get('/casework-MS/cases1', function (req, res) {
-      res.render('casework-MS/cases1', { 'title' : 'Cases' });
+    //Version 1
+    app.get('/MS-v1/cases1', function (req, res) {
+      res.render('MS-v1/cases1', { 'title' : 'Cases' });
     });
 
-    app.get('/casework-MS/case1', function (req, res) {
-      res.render('casework-MS/case1', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    app.get('/MS-v1/case1', function (req, res) {
+      res.render('MS-v1/case1', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
     });
 
-    app.get('/casework-MS/cases2', function (req, res) {
-      res.render('casework-MS/cases2', { 'title' : 'Cases' });
+    app.get('/MS-v1/cases2', function (req, res) {
+      res.render('MS-v1/cases2', { 'title' : 'Cases' });
     });
 
-    app.get('/casework-MS/case2', function (req, res) {
-      res.render('casework-MS/case2', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    app.get('/MS-v1/case2', function (req, res) {
+      res.render('MS-v1/case2', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
     });
 
-    app.get('/casework-MS/task', function (req, res) {
-      res.render('casework-MS/task', { 'title' : 'Task' });
+    app.get('/MS-v1/task', function (req, res) {
+      res.render('MS-v1/task', { 'title' : 'Task' });
     });
 
+    //Version 2
+    app.get('/MS-v2/cases1', function (req, res) {
+      res.render('MS-v2/cases1', { 'title' : 'Cases' });
+    });
+
+    app.get('/MS-v2/case1', function (req, res) {
+      res.render('MS-v2/case1', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v2/cases2', function (req, res) {
+      res.render('MS-v2/cases2', { 'title' : 'Cases' });
+    });
+
+    app.get('/MS-v2/case2', function (req, res) {
+      res.render('MS-v2/case2', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v2/task', function (req, res) {
+      res.render('MS-v2/task', { 'title' : 'Task' });
+    });
   }
 };

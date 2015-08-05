@@ -15,11 +15,6 @@
 {{/heading}}
 
 {{$body}}
-<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <p class="lead">You completed <a href="#" class="alert-link">Task #1: Review draft register entries</a>.</p>
-</div>
-
 <div class="row">
   <!-- Left column -->
   <div class="col-sm-9">
@@ -56,16 +51,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="success">
+              <tr>
                 <td>1</td>
                 <td>Review draft register entries</td>
-                <td>You</td>
-                <td class="text-right"><i class="fa fa-check fa-fw fa-lg"></i> Completed</td>
+                <td>-</td>
+                <td><a class="btn btn-success pull-right" href="/MS-v1/task/" role="button">Start Task <i class="fa fa-chevron-right fa-fw fa-lg"></i></a></td>
               </tr>
             </tbody>
           </table>
           <div class="panel-body">
-            <a  class="btn btn-success btn-lg pull-right" href="/casework-MS/cases2/">Finish Case <i class="fa fa-chevron-right fa-fw fa-lg"></i></a>
+            <button type="button" class="btn btn-default btn-lg pull-right" disabled="disabled">Finish Case <i class="fa fa-chevron-right fa-fw fa-lg"></i></button>
           </div>
         </div>
       </div>
@@ -84,6 +79,7 @@
                 <th>Type</th>
                 <th>Description</th>
                 <th>Date</th>
+                <th>From</th>
                 <th></th>
               </tr>
             </thead>
@@ -152,7 +148,6 @@
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw"></i> <a href="#">Sarah Coleman</a> commented: "Consent of Virgin Money PLC was not received. Have queried with Emma Thomas at Epic Law."</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw"></i> Consent Letter received</li>
             <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:25:40</strong><br/><i class="fa fa-check fa-fw text-success"></i> Passed Validation</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw"></i> 24/07/2015 14:53:12</strong><br/><i class="fa fa-tasks fa-fw"></i> You completed Task #1: Review draft register entries</li>
           </div>
           <div class="panel-body">
             <form>
@@ -167,7 +162,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Modals -->
 <div class="modal fade" id="deedModal" tabindex="-1" role="dialog" aria-labelledby="deedModalLabel">
