@@ -188,6 +188,12 @@ div#content {
 
 .casework-dashboard td {
   vertical-align: text-top;
+  font-size:19px;
+}
+
+.casework-dashboard th {
+  vertical-align: text-top;
+  font-size:16px;
 }
 
 .disabled-button {
@@ -199,8 +205,16 @@ div#global-header-bar {
     background-color: #006400;
 }
 
-
 .investigate {
   font-weight:600;
-  color:red;
+  color:black;
 }
+
+.reported-by {
+  color: grey;
+  font-style: italic;
+  font-size:80%;
+}
+
+
+
