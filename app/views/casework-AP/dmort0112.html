@@ -1,8 +1,7 @@
 {{<internal_gov}}
 
 {{$pageTitle}}Casework - case{{/pageTitle}}
-{{$propositionHeader}}<a href="/casework-AP/list" id="proposition-name">digital mortgage applications</a> <span id="proposition-name"> : dMort0112</span>
-{{/propositionHeader}}
+{{$propositionHeader}}<a href="/casework-AP/list2" id="proposition-name">digital services : mortgage applications</a>{{/propositionHeader}}
 
 
 {{$content}}
@@ -14,21 +13,22 @@
 
       <div class="grid-row">
 
-      <h1 class="visuallyhidden">Case 12345</h1>
+      <h1 class="visuallyhidden">digi-mortgage-0112</h1>
 
         <div class="column-third">
 
 
 
-            <!-- <h2 class="heading-medium col-top">application dMort0112</h2> -->
+            <h2 class="heading-medium col-top">digi-mortgage-0112</h2>
 
             <p>No prior applications against this title (daylist is clear)</p>
             
             <p>Mortgage deed has been digitally signed and all application details have been verified (no checks needed)</p>
-            <p>New version of the register has been automatically drafted</p>
+            
+            <p class="new">New version of the register has been automatically drafted</p>
 
 
-<form action="/casework-AP/list" method="get">
+<form action="/casework-AP/list2" method="get">
 	<fieldset class="inline">
 	    <legend>
 	      <span class="form-label-bold">
@@ -41,7 +41,7 @@
 	<br>
 	<br>
 
-<form action="/casework-AP/list" method="get">
+<form action="/casework-AP/list2" method="get">
 	<fieldset>
 	    <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
 	    	<input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
@@ -52,7 +52,7 @@
 	      <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
 	    </div>
 	  </fieldset>
-  <button type="cancel" id="store-button" class="disabled button">Store application</button>
+  <button type="cancel" id="store-button" class="disabled button">Report problems</button>
 </form>
 
         </div> <!-- column-third -->
@@ -76,8 +76,8 @@
 						<br>Date        : 11 April 2008
 			       		<br>Term        : 125 years from 1 July 2007
 			       		<br>Parties     : (1) Preston Homes (Newham) Limited
-			            <br>	          (2) Colin Alexander
-			            <br>	          (3) Lancaster Management Limited
+			            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Colin Alexander
+			            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3) Lancaster Management Limited
 			            </p>
 					</entry>
 				</li>
@@ -105,12 +105,12 @@
 			<ol>
 				<li>
 					<entry>
-						<p><span class="entry-date">(14.09.2012)</span> PROPRIETOR: GRAHAM JACOB JONES of Flat 27, Violet Court, 36 Barbers Road, London E13 2HS</p>
+						<p><span class="entry-date">(14.09.2012)</span> PROPRIETOR: GRAHAM JACOB JONES of Flat 27, Violet Court, 36 Barbers Road, London E13 2HS.</p>
 					</entry>
 				</li>
 				<li>
 					<entry>
-						<p><span class="entry-date">(14.09.2012)</span> The price stated to have been paid on 7 September 2012 for the land in this title and in title number DT521363 was £325,000.</p>
+						<p><span class="entry-date">(14.09.2012)</span> The price stated to have been paid on 7 September 2012 for the land in this title <!-- and in title number DT521363 --> was £325,000.</p>
 					</entry>
 				</li>
 			<!-- this entry below will not stop a mortgage, but it should make a person stop and think -->
@@ -132,7 +132,7 @@
 			<ol>
 				<li>
 					<entry>
-						<p><span class="entry-date">(14.11.2014)</span> REGISTERED CHARGE dated 31 October 2014 affecting also title DT521363.</p>
+						<p><span class="entry-date">(14.11.2014)</span> REGISTERED CHARGE dated 31 October 2014 <!-- affecting also title DT521363 -->.</p>
 					</entry>
 				</li>
 				<li>
