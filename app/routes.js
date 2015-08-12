@@ -59,5 +59,13 @@ module.exports = {
     app.get('/MS-v2/task2', function (req, res) {
       res.render('MS-v2/task2', { 'title' : 'Task' });
     });
+
+    app.get('/MS-v2/case3', function (req, res) {
+      res.render('MS-v2/case3', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v2/case4', function (req, res) {
+      res.render('MS-v2/case4', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
   }
 };
