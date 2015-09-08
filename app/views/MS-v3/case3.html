@@ -1,0 +1,243 @@
+{{<material}}
+
+{{$pageTitle}}
+Case
+{{/pageTitle}}
+
+{{$heading}}
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="container">
+      <h3><i class="fa fa-folder-open-o fa-fw fa-lg"></i> {{ title }}: {{ ref }} - {{ type }}</h3>
+    </div>
+  </div>
+</div>
+{{/heading}}
+
+{{$body}}
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p class="lead"><i class="fa fa-flag fa-fw"></i> You completed <strong>Task 2</strong>.</p>
+</div>
+
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p class="lead"><i class="fa fa-flag fa-fw"></i> All tasks are complete, you may now complete the case.</p>
+</div>
+
+<div class="row">
+  <!-- Left column -->
+  <div class="col-sm-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default" id="activity">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-history fa-fw"></i> Activity</h5>
+            </div>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw fa-lg"></i> Case Received<br/>
+              <i class="fa fa-files-o fa-fw fa-lg"></i> Scanned Deed received<br/>
+              <i class="fa fa-check fa-fw fa-lg text-success"></i> Daylist Clear
+            </li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw fa-lg"></i> <a href="#">Sarah Coleman</a> commented: "Consent of Virgin Money PLC was not received. Have queried with Emma Thomas at Epic Law."</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw fa-lg"></i> Consent Letter received</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:25:40</strong><br/><i class="fa fa-check fa-fw fa-lg text-success"></i> Passed Validation</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:46:23</strong><br/><i class="fa fa-tasks fa-fw fa-lg"></i> You completed Task 1</li>
+            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:49:03</strong><br/><i class="fa fa-tasks fa-fw fa-lg"></i> You completed Task 2</li>
+          </div>
+          <div class="panel-footer">
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Comment">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button"><i class="fa fa-comment-o fa-fw fa-lg"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading">Actions</h5>
+            </div>
+            <div class="list-group-item">
+              <a class="btn btn-success btn-lg btn-block" href="/MS-v2/cases2/" role="button"><i class="fa fa-check fa-fw fa-lg"></i> Complete Case</a>
+              <a class="btn btn-default btn-lg btn-block" href="/MS-v2/cases1/" role="button"><i class="fa fa-chevron-left fa-fw fa-lg"></i> Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Right column -->
+  <div class="col-sm-9">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default" id="narrative">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-quote-right fa-fw"></i> Narrative</h5>
+            </div>
+            <div class="list-group-item">
+              <p class="lead">"Our client, Mr Graham Jacob Jones has taken out a second mortgage against his property. We have sought the consent of Virgin Money PLC as first lender and have attached the consent as evidence."</p>
+              <p>Emma Thomas - <em>Legal Executive at Epic Law</em></p>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a class="btn btn-link" href="#"><i class="fa fa-envelope fa-fw fa-lg"></i> Email</a>
+            <a class="btn btn-link" href="#"><i class="fa fa-phone fa-fw fa-lg"></i> Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default" id="evidence">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-files-o fa-fw"></i> Evidence</h5>
+            </div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>From</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Image</td>
+                <td>Scanned Deed</td>
+                <td>24/07/2015 13:37:01</td>
+                <td>Epic Law</td>
+                <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#deedModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
+              </tr>
+              <tr>
+                <td>PDF</td>
+                <td>Consent Letter</td>
+                <td>24/07/2015 14:25:34</td>
+                <td>Epic Law</td>
+                <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#consentModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default table-responsive" id="parties">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-users fa-fw"></i> Parties</h5>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Borrower</th>
+                <th>Conveyancer</th>
+                <th>First Lender</th>
+                <th>Second Lender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#"><i class="fa fa-user fa-fw fa-lg"></i> Graham Jacob Jones</a></td>
+                <td><a href="#"><i class="fa fa-gavel fa-fw fa-lg"></i> Epic Law</a></td>
+                <td><a href="#"><i class="fa fa-bank fa-fw fa-lg"></i> Virgin Money PLC</a></td>
+                <td><a href="#"><i class="fa fa-bank fa-fw fa-lg"></i> Shawbrook Bank Limited</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default table-responsive" id="tasks">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-tasks fa-fw"></i> Tasks</h5>
+            </div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Task Number</th>
+                <th>Task</th>
+                <th>Owner</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="success">
+                <td>1</td>
+                <td>Check for consent</td>
+                <td>You</td>
+                <td class="text-right"><i class="fa fa-check fa-fw fa-lg"></i> Complete</td>
+              </tr>
+              <tr class="success">
+                <td>2</td>
+                <td>Review draft register entries</td>
+                <td>You</td>
+                <td class="text-right"><i class="fa fa-check fa-fw fa-lg"></i> Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade" id="deedModal" tabindex="-1" role="dialog" aria-labelledby="deedModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deedModalLabel">Scanned Deed</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://img.docstoccdn.com/thumb/orig/74856253.png" alt="Scanned Deed" width="580px">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="consentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="consentModalLabel">Consent Letter</h4>
+      </div>
+      <div class="modal-body">
+        <p>Dear Ms Thomas</p>
+        <p>Thank you for your letter dated 20/07/2015</p>
+        <p>In connection with the charge restriction registered in our favour we write to confirm that we are more than happy to consent to the second mortgage to Mr Graham Jacob Jones dated 13/06/2015</p>
+        <p>Regards,</p>
+        <p>Virgin Money PLC</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{/body}}
+
+{{/material}}

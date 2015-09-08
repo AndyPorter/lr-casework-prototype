@@ -67,5 +67,39 @@ module.exports = {
     app.get('/MS-v2/case4', function (req, res) {
       res.render('MS-v2/case4', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
     });
+
+
+    //Version 3
+    app.get('/MS-v3/cases1', function (req, res) {
+      res.render('MS-v3/cases1', { 'title' : 'Cases' });
+    });
+
+    app.get('/MS-v3/case1', function (req, res) {
+      res.render('MS-v3/case1', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v3/cases2', function (req, res) {
+      res.render('MS-v3/cases2', { 'title' : 'Cases' });
+    });
+
+    app.get('/MS-v3/case2', function (req, res) {
+      res.render('MS-v3/case2', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v3/task1', function (req, res) {
+      res.render('MS-v3/task1', { 'title' : 'Task' });
+    });
+
+    app.get('/MS-v3/task2', function (req, res) {
+      res.render('MS-v3/task2', { 'title' : 'Task' });
+    });
+
+    app.get('/MS-v3/case3', function (req, res) {
+      res.render('MS-v3/case3', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
+
+    app.get('/MS-v3/case4', function (req, res) {
+      res.render('MS-v3/case4', { 'title' : 'Case', 'ref' : 'REF0782', 'type' : 'Mortgage' });
+    });
   }
 };
