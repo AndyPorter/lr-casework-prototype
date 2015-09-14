@@ -19,34 +19,6 @@ Case
   <!-- Left column -->
   <div class="col-sm-3">
     <div class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default" id="activity">
-          <div class="list-group">
-            <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-history fa-fw"></i> Activity</h5>
-            </div>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 13:37:01</strong><br/><i class="fa fa-folder-o fa-fw fa-lg"></i> Case Received<br/>
-              <i class="fa fa-files-o fa-fw fa-lg"></i> Scanned Deed received<br/>
-              <i class="fa fa-check fa-fw fa-lg text-success"></i> Daylist Clear
-            </li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:01:24</strong><br/><i class="fa fa-comments-o fa-fw fa-lg"></i> <a href="#">Sarah Coleman</a> commented: "Consent of Virgin Money PLC was not received. Have queried with Emma Thomas at Epic Law."</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:25:34</strong><br/><i class="fa fa-files-o fa-fw fa-lg"></i> Consent Letter received</li>
-            <li class="list-group-item"><strong><i class="fa fa-clock-o fa-fw fa-lg"></i> 24/07/2015 14:25:40</strong><br/><i class="fa fa-check fa-fw fa-lg text-success"></i> Passed Validation</li>
-          </div>
-          <div class="panel-footer">
-            <form>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Comment">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-comment-o fa-fw fa-lg"></i></button>
-                </span>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-sm-12">
         <div class="panel panel-default">
           <div class="list-group">
@@ -55,7 +27,7 @@ Case
             </div>
             <div class="list-group-item">
               <a class="btn btn-success btn-lg btn-block" disabled="disabled" role="button"><i class="fa fa-check fa-fw fa-lg"></i> Complete Case</a>
-              <a class="btn btn-default btn-lg btn-block" href="/MS-v2/cases1/" role="button"><i class="fa fa-chevron-left fa-fw fa-lg"></i> Back</a>
+              <a class="btn btn-default btn-lg btn-block" href="/MS-v3/cases1/" role="button"><i class="fa fa-chevron-left fa-fw fa-lg"></i> Back</a>
             </div>
           </div>
         </div>
@@ -66,20 +38,48 @@ Case
   <div class="col-sm-9">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-default" id="narrative">
+        <div class="panel panel-default table-responsive" id="parties">
           <div class="list-group">
             <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-quote-right fa-fw"></i> Narrative</h5>
-            </div>
-            <div class="list-group-item">
-              <p class="lead">"Our client, Mr Graham Jacob Jones has taken out a second mortgage against his property. We have sought the consent of Virgin Money PLC as first lender and have attached the consent as evidence."</p>
-              <p>Emma Thomas - <em>Legal Executive at Epic Law</em></p>
+              <h5 class="list-group-item-heading"><i class="fa fa-users fa-fw"></i> Parties</h5>
             </div>
           </div>
-          <div class="panel-footer">
-            <a class="btn btn-link" href="#"><i class="fa fa-envelope fa-fw fa-lg"></i> Email</a>
-            <a class="btn btn-link" href="#"><i class="fa fa-phone fa-fw fa-lg"></i> Call</a>
-          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Borrower</td>
+                <td>Graham Jacob Jones</td>
+                <td><a href="tel:07890123456">07890123456</a></td>
+                <td><a href="mailto:grahamjones@gmail.com?Subject=Mortgage%20Application" target="_blank">grahamjones@gmail.com</a></td>
+              </tr>
+              <tr>
+                <td>Conveyancer</td>
+                <td>Epic Law</td>
+                <td><a href="tel:01800123456">01800123456</a></td>
+                <td><a href="mailto:emma.thomas@epiclaw.com?Subject=Mortgage%20Application" target="_blank">emma.thomas@epiclaw.com</a></td>
+              </tr>
+              <tr>
+                <td>First Lender</td>
+                <td>Virgin Money PLC</td>
+                <td><a href="tel:08450123456">08450123456</a></td>
+                <td><a href="mailto:mortgages@virginmoney.com?Subject=Mortgage%20Application" target="_blank">mortgages@virginmoney.com</a></td>
+              </tr>
+              <tr>
+                <td>Second Lender</td>
+                <td>Shawbrook Bank Limited</td>
+                <td><a href="tel:08450654321">08450654321</a></td>
+                <td><a href="mailto:mortgage.support@shawbrook.com?Subject=Mortgage%20Application" target="_blank">mortgage.support@shawbrook.com</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -94,7 +94,6 @@ Case
           <table class="table table-hover">
             <thead>
               <tr>
-                <th>Type</th>
                 <th>Description</th>
                 <th>Date</th>
                 <th>From</th>
@@ -103,47 +102,16 @@ Case
             </thead>
             <tbody>
               <tr>
-                <td>Image</td>
-                <td>Scanned Deed</td>
+                <td>Deed</td>
                 <td>24/07/2015 13:37:01</td>
                 <td>Epic Law</td>
                 <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#deedModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
               </tr>
               <tr>
-                <td>PDF</td>
                 <td>Consent Letter</td>
                 <td>24/07/2015 14:25:34</td>
                 <td>Epic Law</td>
                 <td><button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#consentModal"><i class="fa fa-eye fa-fw fa-lg"></i> View</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default table-responsive" id="parties">
-          <div class="list-group">
-            <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-users fa-fw"></i> Parties</h5>
-            </div>
-          </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Borrower</th>
-                <th>Conveyancer</th>
-                <th>First Lender</th>
-                <th>Second Lender</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#"><i class="fa fa-user fa-fw fa-lg"></i> Graham Jacob Jones</a></td>
-                <td><a href="#"><i class="fa fa-gavel fa-fw fa-lg"></i> Epic Law</a></td>
-                <td><a href="#"><i class="fa fa-bank fa-fw fa-lg"></i> Virgin Money PLC</a></td>
-                <td><a href="#"><i class="fa fa-bank fa-fw fa-lg"></i> Shawbrook Bank Limited</a></td>
               </tr>
             </tbody>
           </table>
