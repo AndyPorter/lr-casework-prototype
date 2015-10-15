@@ -1,0 +1,68 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/casework-v3/list2" id="proposition-name">digital services : mortgage applications</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/casework-shame-ap-v3.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="content">
+
+    <div class="grid-row">
+
+
+        <div class="column-three-quarters">
+			<h1 class="heading-large col-top">Can this mortgage application be processed?</h1>
+
+			<p class="lede">Prior application(s) exist on this title, please check Daylist </p>
+
+			<h2 class="heading-medium">Mortgage Application</h2>
+			<ul class="no-bullets">
+				<li>Title Number: <b>DN1234</b></li>
+				<li>Application Ref: <b>dmort0112</b></li>
+				<li>In favour of (Applicant): <b>Shawbrook Bank Limited</b></li>
+				<li>Submitted by (Customer): <b>Coldpress Solicitors</b></li>
+			</ul>
+
+		</div>
+	</div>
+	<br>
+
+	<div class="grid-row">	
+
+		<div class="column-three-quarters">
+
+			<form action="/casework-v3/dmort0112" method="get">
+				<p><span style="line-height:45px;">I can</span> <button type="submit" class="button">Process this application</button></p>
+			</form>
+
+			<br>
+
+			<p><a href="">Defer this application</a> for <input type="text" size="2" name="defer_for_days" value="1"> day</p>
+
+			<p><a href="case-problem">Contact the conveyancer</a> or <a href="">Cancel this application</a></p>
+
+ 		</div>  <!-- column-two-thirds -->
+
+    </div> <!-- grid row -->
+
+<br>
+    <div class="grid-row">	
+		<div class="column-two-thirds">
+			<p><a href="list">&lt; Back to caselist</a></p>
+		</div>
+	</div>
+
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
