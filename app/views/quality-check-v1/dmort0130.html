@@ -1,0 +1,168 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v1/list4" id="proposition-name">digital services : mortgage applications</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="content">
+
+      <div class="grid-row">
+
+      <h1 class="visuallyhidden">DM0117</h1>
+
+        <div class="column-third">
+
+
+
+            <h2 class="heading-medium col-top">DM0130</h2>
+
+
+                        <p><span class="help-link" id="application-info-link">mortgage application</span> from <span  class="help-link" id="applicant-info-link"><b>Coldpress solicitors</b></span> on behalf of <b>GE Money Home Finance Limited</b></p>
+
+
+            <p><b>No prior applications</b> against this title (daylist is clear)</p>
+            
+            <p><b>Mortgage deed has been digitally signed</b> by <span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>, <span class="proprietor-name">DAVID RICHARD TOMKINSON</span> and <span class="proprietor-name">MICHAEL IAN WALPOLE</span></p>
+
+            <p>All <b>application details have been verified</b> (no checks needed)</p>
+            
+            <p class="new">Entries have been automatically added to create a new draft register</p>
+
+
+
+        </div> <!-- column-third -->
+
+
+        <div class="column-two-thirds">
+			<h2 class="heading-medium col-top">CL460071 - draft register</h2>
+
+			<h3 class="heading-medium col-top">A register</h3>
+			<p class="district">CORNWALL</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(03-07-2005)</span> The Freehold land shown edged with red on the plan of the above title filed at the Registry and being <span class="property-address">17 Lower Hugus Road, Threemilestone, Truro, TR3 8CP</span></p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p><span class="entry-date">(18-04-2014)</span> The land has the benefit of the rights granted by but is subject to the rights reserved by a Transfer of the land in this title dated 3 May 2014 made between (1) Trudy Anne Goodman and (2) Daphne Anne Tomkinson, David Richard Tomkinson and Michael Ian Walpole.</p>
+						<p>NOTE: Copy filed.</p>
+					</entry>
+				</li>
+ 				<li>
+					<entry>
+						<p><span class="entry-date">(18-04-2014)</span> The Transfer dated 3 May 2014 referred to above contains a provision as to light and air and a provision excluding the operation of section 62 of the Law of Property Act 1925 as therein mentioned.</p>
+					</entry>
+				</li>
+			</ol>
+
+
+			<h3 class="heading-medium">B register</h3>
+			<p class="class-of-title">Title Absolute</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(18-04-2014)</span> PROPRIETOR: <span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>, <span class="proprietor-name">DAVID RICHARD TOMKINSON</span> and <span class="proprietor-name">MICHAEL IAN WALPOLE</span> of <span class="proprietor-address">Menerdue Farm, Port Navas, Falmouth TR12 3CJ</span> and of <span class="proprietor-address">Upper Courtyard Office, Church Bottom Barns, Salterton, Salisbury SP3 6BH.</span></p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p><span class="entry-date">(18-04-2014)</span> RESTRICTION: No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court.</p>
+					</entry>
+				</li>
+			</ol>
+
+			<h3 class="heading-medium">C register</h3>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(03-07-2005)</span> The land is subject to the rights reserved by a Assent of the land in this title and other land dated 9 June 2005 made between (1) Trudy Anne Goodman and Daphne Anne Tomkinson and (2) Trudy Anne Goodman.</p>
+    					<p>NOTE: Copy filed under CL268149.</p>
+					</entry>
+				</li>
+
+				<li>
+					<entry>
+						<p><span class="entry-date">(12.11.2013)</span> RESTRICTION: No transfer or lease by the proprietors of the registered estate is to be registered unless one or more of them makes a statutory declaration or statement of truth, or their conveyancer gives a certificate, that the disposition is in accordance with the trusts of the will dated 17th June 2011, of Daphne Anne Tomkinson or some variation thereof referred to in the declaration, statement or certificate</p>
+					</entry>
+				</li>
+
+				<!-- these two c reg entries are added by the mortgage application -->
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-c">proposed c entries</a></h3> 
+				<li>
+					<entry class="new">
+						<p>REGISTERED CHARGE dated 13 May 2015.</p>
+					</entry>
+				</li>
+				<li>
+					<entry class="new">
+						<p>Proprietor: #GE MONEY HOME FINANCE LIMITED# (Co. Regn. No. 592986) of Building 4, Hatters Lane, Croxley Green Business Park, Watford WD18 8YF.</p>
+					</entry>
+				</li>	
+			</ol>
+<hr>
+<br>
+<form action="/quality-check-v1/list4" method="get">
+	<fieldset class="inline">
+	    <legend>
+	      <span class="form-label-bold">
+	        If this mortgage application (charge) does not conflict with any existing entries, please complete this application.
+	      </span>
+	    </legend>
+	  </fieldset>
+	  <button type="submit" id="complete-button" class="button">Complete application</button>
+</form>
+	<br>
+
+
+<form action="/quality-check-v1/list4" method="get">
+	<fieldset>
+	    <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
+	    	<input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
+	        There is a problem with this autodrafted register
+	    </label>
+	    <div class="panel-indent js-hidden" id="cant-complete-reason">
+
+	      <label style="margin-bottom:10px;" class="form-label" for="complete-problem">Please make a note of the problem.  The case will be stored, and the digital mortgage team will be in touch.</label>
+	      <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
+	    </div>
+	  </fieldset>
+  <button type="cancel" id="store-button" class="disabled button">Report problem</button>
+</form>
+ 		</div>  <!-- column-two-thirds -->
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>
