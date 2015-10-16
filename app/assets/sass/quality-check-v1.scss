@@ -186,15 +186,6 @@ div#content {
   padding-top: 0px !important;
 }
 
-.casework-dashboard td {
-  vertical-align: text-top;
-  font-size:19px;
-}
-
-.casework-dashboard th {
-  vertical-align: text-top;
-  font-size:16px;
-}
 
 .disabled-button {
   opacity:50%;
@@ -271,6 +262,93 @@ td.date-received, td.title-number {
   color: green;
   font-weight: normal;
 }
+
+// -----------------------------
+// quality check style
+// -----------------------------
+
+ul {
+  list-style-type:none;
+}
+
+// list page
+
+.quality-dashboard td {
+  vertical-align: text-top;
+  font-size:19px;
+  padding-left:5px;
+}
+
+.quality-dashboard th {
+  vertical-align: text-top;
+  font-size:16px;
+}
+
+tr.row-display-1 {
+  background-color: none;
+}
+
+tr.row-display-2{
+  background-color: #DEE0E2;
+}
+
+// idea 2
+
+tr.row-display-1-2{
+  background-color: #EDF0F2;
+}
+
+.quality-dashboard th.idea2 {
+  vertical-align: text-top;
+  font-size:19px;
+  padding-left:5px;
+  background-color: #EDF0F2;
+  border: 1px solid #DEE0E2;
+}
+
+// idea 3
+
+.quality-dashboard th.idea3 {
+  vertical-align: text-top;
+  font-size:24px;
+  padding-left:5px;
+  background-color: #EDF0F2;
+  border: 1px solid #DEE0E2;
+}
+
+.tabs-panel-inner .quality-dashboard {
+  margin-top:30px;
+}
+
+// idea 4
+
+.quality-dashboard th.idea4 {
+  vertical-align: text-top;
+  font-size:24px;
+  padding-left:5px;
+}
+
+
+
+// ==========================================================================
+// Tabs - from Rural Payments: http://rural-payments-styleguide.herokuapp.com/snippets/
+// ==========================================================================
+.tabs{margin-bottom:1.05263em}
+.tabs [role="tablist"]{border-top:1px solid #bfc1c3;margin:0}
+@media (min-width: 641px){.tabs [role="tablist"]{border-top:0 none}}
+.tabs [role="tablist"] li{font-family:"nta",Arial,sans-serif;font-size:19px;line-height:1.31579;font-weight:400;text-transform:none;border-bottom:1px solid #bfc1c3;margin:0}
+@media (max-width: 640px){.tabs [role="tablist"] li{font-size:16px;line-height:1.25}}
+@media (min-width: 641px){.tabs [role="tablist"] li{border-bottom:0 none;float:left;margin:0 0 -1px;padding:0}}
+.tabs [role="tablist"] li a{background-color:#fff;display:block;padding:0.47368em;text-decoration:none}
+.tabs [role="tablist"] li a:focus{outline:3px}
+@media (min-width: 641px){.tabs [role="tablist"] li a{background-color:#dee0e2;border:0 none;float:left;margin:0.26316em 0.26316em 0.26316em 0;padding:0.47368em 1em;text-align:center}}
+.tabs [role="tablist"] li [aria-selected="true"]{background-color:#fff;color:#0b0c0c;cursor:default;text-decoration:none}
+@media (min-width: 641px){.tabs [role="tablist"] li [aria-selected="true"]{border:1px solid #bfc1c3;border-bottom:1px solid transparent;margin-top:0;margin-bottom:0;padding:0.68421em 0.94737em 0.73684em}}
+.tabs-content{clear:both}
+@media (min-width: 641px){.tabs-content [role="tabpanel"]{border-top:1px solid #bfc1c3}}
+.tabs-content [role="tabpanel"][aria-hidden="true"]{display:none}
+.tabs-panel-inner:focus{border:0;outline:0}
+
 
 
 
