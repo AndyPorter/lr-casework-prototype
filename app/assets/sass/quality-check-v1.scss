@@ -153,6 +153,9 @@
   padding: 30px; }
 
 
+.header-proposition {
+  padding-left:15px;
+}
 
 // new style
 p.task {
@@ -161,21 +164,21 @@ p.task {
 
 entry.new p {
   padding: 0px 5px 10px 5px;
-  border-left: 5px solid #005ea5; 
+  border-left: 5px solid #28A197; 
 }
 
 p.new {
   padding: 0px 5px 10px 5px;
-  border-left: 5px solid #005ea5; 
+  border-left: 5px solid #28A197;
 }
 
 entry.new p::before {
   content:"NEW: ";
   color: black; 
 /*  border:2px solid #56c7c7; 
-  border:2px solid #005ea5; */
+  border:2px solid #28A197; */
   color:white;
-  background-color: #005ea5;
+  background-color: #28A197;
 }
 
 .col-top {
@@ -194,6 +197,8 @@ div#content {
 div#global-header-bar {
     height: 8px;
     background-color: #006400;
+    margin-left:30px;
+    margin-right:30px;
 }
 
 .investigate {
@@ -207,10 +212,15 @@ div#global-header-bar {
   font-size:80%;
 }
 
-.proprietor-name {
-  font-weight:800;
-  color:#006400;
-}
+//.proprietor-name {
+//  font-weight:800;
+//  color:#006400;
+//}
+
+//.lender-name {
+// font-weight:800;
+//  color:#006400;
+//}
 
 .headline-stat {
   font-size: 76px;
@@ -331,6 +341,14 @@ tr.row-display-1-2{
   margin-top:30px;
 }
 
+.proprietor-name {
+  font-weight:normal;
+}
+
+.lender-name {
+  font-weight:normal;
+}
+
 // idea 4
 
 .quality-dashboard th.idea4 {
@@ -338,6 +356,7 @@ tr.row-display-1-2{
   font-size:24px;
   padding-left:5px;
 }
+
 
 
 
