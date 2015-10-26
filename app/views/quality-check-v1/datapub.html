@@ -1,0 +1,99 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v1/list-idea-3a" id="proposition-name">Land Registry Data</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v1.css" media="screen" rel="stylesheet" type="text/css" />
+<style>
+
+#global-header .header-wrapper {
+    background-color: #333333;  
+}
+
+div#global-header-bar {
+    height: 8px;
+    background-color: #b3d334;  
+    margin-left:30px;
+    margin-right:30px;
+}
+
+#footer .footer-meta {
+	padding-bottom:30px;
+
+}
+</style>
+
+<main id="content" role="main">
+
+  <div id="content">
+
+      <div class="grid-row">
+
+       <h1 class="heading-xlarge">Overseas ownership dataset</h1>
+
+        <div class="column-third">
+
+
+        </div> <!-- column-third -->
+
+
+        <div class="column-two-thirds">
+
+
+ 		</div>  <!-- column-two-thirds -->
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+<footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+<p>blurb about contacting us</p>
+          <p>legally correct blurb about us collecting data</p>
+        <div class="footer-meta">
+        <p>blurb about contacting us</p>
+          <p>legally correct blurb about us collecting data</p>
+          <div class="footer-meta-inner">
+
+  <h2 class="visuallyhidden">Support links</h2>
+  <ul>
+    <li><a href="#">Copyright notices</a></li>
+    <li><a href="/help">Help</a></li>
+    <li><a href="/help/cookies">Cookies</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <!--<li><a href="/cymraeg">Cymraeg</a></li>-->
+    <li>Built by the <a href="#">Land Registry</a></li>
+  </ul>
+
+        </div>
+      </div>
+    </footer>
+
+
+{{/content}}
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>

@@ -1,0 +1,163 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v2/list-idea-3a" id="proposition-name">Reviewing registers</a>{{/propositionHeader}}
+{{$rightHeader}}<div class="header-stats"><span>4 to do, 8 done</span></div>{{/rightHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v2.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="contentx">
+
+      <div class="grid-row">
+
+      <h1 class="visuallyhidden">draft register for title: BD161882, due to application: dmort0102</h1>
+
+      	 <div class="column-third">
+			<section class="js-stick-at-top-when-scrolling">
+            <h2 class="visuallyhidden">Participants</h2>
+<!--             <h3 class="heading-medium">Conveyancer</h3>
+            <p><span class="help-link" id="applicant-info-link">Coldpress solicitors</span></p> -->
+            <h3 class="heading-xsmall col-top">Lender</h3>
+            <p class=""><span class="help-link lender-name" id="application-info-link">Shawbrook Bank Limited</span></p>
+            <h3 class="heading-xsmall">Owner</h3>
+            <p class=""><span class="proprietor-name">Andrew Pitom</span></p>
+
+			<br>
+			<a href="/quality-check-v2/list-idea-3a-2">Return to list</a>  
+			</section>
+        </div> <!-- column-third -->
+
+
+        <div class="column-two-thirds">
+			<div class="call-to-action">
+				<h2 class="heading-large col-top">Approve draft register</h2>
+				<p>Title: CL460071, Application dmort0102</p>
+			</div>
+
+			<h3 class="heading-medium col-top">Property register</h3>
+			<p class="district">BEDFORDSHIRE: LUTON</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(04-10-1980)</span> The Freehold land shown edged with red on the plan of the above title filed at the Registry and being <span class="property-address">17 Kenilworth Road, Luton, LU1 1DQ</span>.</p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p>The land has the benefit of a right of way over the part of the joint passageway at the side not included in the title.
+			            </p>
+					</entry>
+				</li>
+			</ol>
+
+
+			<h3 class="heading-medium">Proprietorship register</h3>
+			<p class="class-of-title">Title Absolute</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(19-02-2013)</span> Proprietor: <span class="proprietor-name"><mark>Andrew Pitom</mark></span> of <span class="proprietor-address">23 Athena Street, Douglas, Isle Of Man, IM2 3EE</span>.</p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p><span class="entry-date">(19-02-2013)</span> The price stated to have been paid on <span class="pp-date">1 May 2014</span> was <span class="pp-amount">£170,000</span>.</p>
+					</entry>
+				</li>
+				<!-- this b reg entry is added by our Shawbrook mortgage application -->  
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-b">proposed b entry</a></h3>
+				<li>
+					<entry class="new">
+					    <p>RESTRICTION: No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 13 June 2015 in favour of SHAWBROOK BANK LIMITED referred to in the Charges Register.</p>
+			    	</entry>
+			    </li>				
+			</ol>
+
+			<h3 class="heading-medium">Charges register</h3>
+			<ol>
+			
+				<!-- these two c reg entries are added by the mortgage application -->
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-c">proposed c entries</a></h3> 
+				<li>
+					<entry class="new">
+						<p>REGISTERED CHARGE dated 13 June 2015.</p>
+					</entry>
+				</li>
+				<li>
+					<entry class="new">
+						<p>Proprietor: <span class="lender-name"><mark>Shawbrook Bank Limited</mark></span> (Co. Regn. No. 388466) of Lutea House, Warley Hill Business Park, The Drive, Great Warley, Brentwood, Essex CM13 8BE.</p>
+					</entry>
+				</li>	
+	
+			</ol>
+
+<br>
+<hr>
+<br>
+
+			<form>
+			    <fieldset class="inline">
+			    
+			      <legend>
+			         <span class="form-label">Is this draft register ok?</span>
+			      </legend>
+			      
+			      <div class="form-group form-group-compound">
+			      
+			        <label class="block-label" for="radio-indent-1">
+			          <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+			        </label>
+			        
+			        <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+			          <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+			        </label>
+			      
+			      </div>
+			      
+			      <div class="panel-indent js-hidden" id="autodraft-problem">
+			        <label class="form-label" for="drfating-error">Please note problem. The application will be stored, to be dealt with later</label>
+			        <textarea class="form-control" style="width:100%" id="drafting-error"></textarea>
+			      </div>
+
+			      	<a href="/quality-check-v2/dmort0003" class= "button">next draft register</a>
+			      	
+			<!-- 		<button type="submit" id="complete-button" class="button">next draft register</button> -->
+			    </fieldset>
+			 </form>
+
+ 		</div>  <!-- column-two-thirds -->
+
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>
