@@ -1,0 +1,462 @@
+// Styles needed for Andy P Casework files
+// govuk overriden style (unbranded) and
+// new style
+
+
+// gov uk overridden style
+body {
+  background-color: #F8F8F8;
+}
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.alpha-banner {
+  padding: 10px 0 8px 0;
+  border-bottom: 1px solid #bfc1c3; }
+  @media (min-width: 641px) {
+    .alpha-banner {
+      padding-bottom: 10px; } }
+  .alpha-banner p {
+    margin: 0;
+    color: #000;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .alpha-banner p {
+        font-size: 14px;
+        line-height: 1.1428571429; } }
+  .alpha-banner .phase-tag {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px 0 0;
+    padding: 2px 5px 0;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-transform: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d53880; }
+    @media (min-width: 641px) {
+      .alpha-banner .phase-tag {
+        vertical-align: baseline; } }
+    @media (max-width: 640px) {
+      .alpha-banner .phase-tag {
+        font-size: 14px;
+        line-height: 1.1428571429; } }
+  .alpha-banner span {
+    vertical-align: top; }
+    @media (min-width: 641px) {
+      .alpha-banner span {
+        vertical-align: baseline; } }
+
+.alpha-tag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d53880; }
+  @media (min-width: 641px) {
+    .alpha-tag {
+      vertical-align: baseline; } }
+  @media (max-width: 640px) {
+    .alpha-tag {
+      font-size: 14px;
+      line-height: 1.1428571429; } }
+
+.unbranded {
+  background: #fff; }
+  .unbranded * {
+    font-family: Arial !important; }
+  .unbranded #footer {
+    border: 0;
+    background: #fff; }
+
+#global-header .header-wrapper, #global-header-bar, #global-cookie-message p, #footer .footer-wrapper, #content {
+  max-width: none; }
+
+#content {
+  padding: 30px; }
+
+
+.header-proposition {
+  padding-left:15px;
+  width:66%;
+  float:left;
+  background-color:#0b0c0c;
+}
+
+// new style
+p.task {
+  font-weight:800;
+}
+
+entry.new p {
+  padding: 0px 5px 10px 5px;
+  border-left: 5px solid #28A197; 
+}
+
+p.new {
+  padding: 0px 5px 10px 5px;
+  border-left: 5px solid #28A197;
+}
+
+entry.new p::before {
+  content:"NEW: ";
+  color: black; 
+/*  border:2px solid #56c7c7; 
+  border:2px solid #28A197; */
+  color:white;
+  background-color: #28A197;
+}
+
+.col-top {
+  margin-top: 20px;
+}
+
+div#content {
+  padding-top: 0px !important;
+}
+
+
+.disabled-button {
+  opacity:50%;
+}
+
+div#global-header-bar {
+    height: 8px;
+    background-color: #006400;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.investigate {
+  font-weight:600;
+  color:black;
+}
+
+.reported-by {
+  color: grey;
+  font-style: italic;
+  font-size:80%;
+}
+
+//.proprietor-name {
+//  font-weight:800;
+//  color:#006400;
+//}
+
+//.lender-name {
+// font-weight:800;
+//  color:#006400;
+//}
+
+.headline-stat {
+  font-size: 76px;
+}
+
+.level2-stat {
+  font-size: 36px;
+  color: grey;
+}
+
+td.date-received, td.title-number {
+  font-size: 16px;
+}
+
+.summary-completed td {
+  color:grey;
+  font-size: 85%;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-footnote {
+  margin-bottom:0;
+  color:grey;
+}
+
+.done-row {
+  background-color: #DEE0E2;
+}
+
+.finished-text {
+  color: #006435;
+  font-weight: bold;
+}
+
+.unopened-text {
+  color: #AF1324;
+  font-weight: bold;
+}
+
+.daylist-green {
+  color: green;
+  font-weight: normal;
+}
+
+// -----------------------------
+// quality check style
+// -----------------------------
+
+ul {
+  list-style-type:none;
+}
+
+// list page
+
+.quality-dashboard td {
+  vertical-align: text-top;
+  font-size:19px;
+  padding-left:5px;
+}
+
+.quality-dashboard th {
+  vertical-align: text-top;
+  font-size:16px;
+}
+
+tr.row-display-1 {
+  background-color: none;
+}
+
+tr.row-display-2{
+  background-color: #DEE0E2;
+}
+
+// make links in table fill entire cell (http://stackoverflow.com/questions/3966027/make-link-in-table-cell-fill-the-entire-row-height/15801081#15801081)
+td {
+    overflow: hidden;
+}
+td a {
+    display: block;
+    margin: -10em;
+    padding: 10em;
+}
+// end links in table
+
+// idea 2
+
+tr.row-display-1-2{
+  background-color: #EDF0F2;
+}
+
+.quality-dashboard th.idea2 {
+  vertical-align: text-top;
+  font-size:19px;
+  padding-left:5px;
+  background-color: #EDF0F2;
+  border: 1px solid #DEE0E2;
+}
+
+// idea 3
+
+.quality-dashboard th.idea3 {
+  vertical-align: text-top;
+  font-size:24px;
+  padding-left:5px;
+  background-color: #ffffff;
+  border: 1px solid #DEE0E2;
+}
+
+.tabs-panel-inner .quality-dashboard {
+  margin-top:30px;
+}
+
+.proprietor-name {
+  font-weight:600;
+}
+
+.lender-name {
+  font-weight:600;
+}
+
+// idea 4
+
+.quality-dashboard th.idea4 {
+  vertical-align: text-top;
+  font-size:24px;
+  padding-left:5px;
+}
+
+
+
+
+// ==========================================================================
+// Tabs - from Rural Payments: http://rural-payments-styleguide.herokuapp.com/snippets/
+// ==========================================================================
+.tabs{margin-bottom:1.05263em}
+.tabs [role="tablist"]{border-top:1px solid #bfc1c3;margin:0}
+@media (min-width: 641px){.tabs [role="tablist"]{border-top:0 none}}
+.tabs [role="tablist"] li{font-family:"nta",Arial,sans-serif;font-size:19px;line-height:1.31579;font-weight:400;text-transform:none;border-bottom:1px solid #bfc1c3;margin:0}
+@media (max-width: 640px){.tabs [role="tablist"] li{font-size:16px;line-height:1.25}}
+@media (min-width: 641px){.tabs [role="tablist"] li{border-bottom:0 none;float:left;margin:0 0 -1px;padding:0}}
+.tabs [role="tablist"] li a{background-color:#fff;display:block;padding:0.47368em;text-decoration:none}
+.tabs [role="tablist"] li a:focus{outline:3px}
+@media (min-width: 641px){.tabs [role="tablist"] li a{background-color:#dee0e2;border:0 none;float:left;margin:0.26316em 0.26316em 0.26316em 0;padding:0.47368em 1em;text-align:center}}
+.tabs [role="tablist"] li [aria-selected="true"]{background-color:#fff;color:#0b0c0c;cursor:default;text-decoration:none}
+@media (min-width: 641px){.tabs [role="tablist"] li [aria-selected="true"]{border:1px solid #bfc1c3;border-bottom:1px solid transparent;margin-top:0;margin-bottom:0;padding:0.68421em 0.94737em 0.73684em}}
+.tabs-content{clear:both}
+@media (min-width: 641px){.tabs-content [role="tabpanel"]{border-top:1px solid #bfc1c3}}
+.tabs-content [role="tabpanel"][aria-hidden="true"]{display:none}
+.tabs-panel-inner:focus{border:0;outline:0}
+
+
+.right-aligned {
+  text-align:right;
+}
+
+.header-right {
+  padding-right:15px;
+  width:25%;
+  float:right;
+}
+
+.header-stats {
+  text-align:right;
+  color:white;
+  line-height:1.25; 
+  font-size:24px;
+}
+
+// register
+
+.register {
+  margin-bottom:30px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #666666;
+//  background-color: #FeFeFe;
+}
+
+.register ol {
+  margin-left:5px;
+}
+
+.entry-date {
+  color:#6f777b;
+}
+
+entry p {
+  max-width:35em;
+}
+
+// alternative buttons
+// ==========================================================================
+
+.button-secondary {
+  background-color:#2B8DAD !important;
+}
+
+.button-secondary:hover, .button-secondary:focus  {
+  background-color:#1B5B70 !important;
+}
+
+.button-cancel {
+  background-color:#E05E1D !important;
+}
+
+.button-cancel:hover, .button-cancel:focus {
+  background-color:#A34515 !important;
+}
+
+.call-to-action {
+    background-color: #005ea5;
+    color: #fff;
+    margin-bottom: 1.05263em;
+    padding: 2em 2em 0.94737em 2em;
+
+}
+
+
+
+
+
+
+
+
+
+
