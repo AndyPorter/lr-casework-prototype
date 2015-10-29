@@ -1,0 +1,203 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v2/list-idea-3a" id="proposition-name">Reviewing registers</a>{{/propositionHeader}}
+{{$rightHeader}}<div class="header-stats"><span>3 to do, 9 done</span></div>{{/rightHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v2.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="contentx">
+
+      <div class="grid-row">
+         <div class="column-two-thirds">
+      		<h1 class="heading-xlarge col-top">Approve draft register
+			<span class="heading-secondary">Title: GL00453, Application dmort0003</span></h1>
+		</div>
+
+
+        <div class="column-two-thirds">
+
+        	<div class="register">
+
+			<h3 class="heading-medium col-top">Property register</h3>
+			<p class="district">CORNWALL</p>
+			<ol>
+				<li>
+					<entry>
+						<p>The Freehold land shown edged with red on the plan of the above title filed at the Registry and being <span class="property-address">17 Lower Hugus Road, Threemilestone, Truro, TR3 8CP</span>.<br><span class="entry-date">(03-07-2005)</span></p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p>The land has the benefit of the rights granted by but is subject to the rights reserved by a Transfer of the land in this title dated 3 May 2014 made between (1) Trudy Anne Goodman and (2) Daphne Anne Tomkinson, David Richard Tomkinson and Michael Ian Walpole.<br><span class="entry-date">(18-04-2014)</span></p>
+						<p>NOTE: Copy filed.</p>
+					</entry>
+				</li>
+ 				<li>
+					<entry>
+						<p>The Transfer dated 3 May 2014 referred to above contains a provision as to light and air and a provision excluding the operation of section 62 of the Law of Property Act 1925 as therein mentioned.<br><span class="entry-date">(18-04-2014)</span></p>
+					</entry>
+				</li>
+			</ol>
+
+
+			<h3 class="heading-medium">Proprietorship register</h3>
+			<p class="class-of-title">Title Absolute</p>
+			<ol>
+				<li>
+					<entry>
+						<p>Proprietor: <span class="proprietor-name"><mark>DAPHNE ANNE TOMKINSON</mark></span>, <span class="proprietor-name"><mark>DAVID RICHARD TOMKINSON</mark></span> and <span class="proprietor-name"><mark>MICHAEL IAN WALPOLE</mark></span> of <span class="proprietor-address">Menerdue Farm, Port Navas, Falmouth TR12 3CJ</span> and of <span class="proprietor-address">Upper Courtyard Office, Church Bottom Barns, Salterton, Salisbury SP3 6BH</span>.<br><span class="entry-date">(18-04-2014)</span></p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p>Restriction: No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court.<br><span class="entry-date">(18-04-2014)</span></p>
+					</entry>
+				</li>
+			
+			</ol>
+
+			<h3 class="heading-medium">Charges register</h3>
+			<ol>
+			
+
+				<!-- these two c reg entries are added by the mortgage application -->
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-c">proposed c entries</a></h3> 
+				<li>
+					<entry class="new">
+						<p>REGISTERED CHARGE dated 13 May 2015.</p>
+					</entry>
+				</li>
+				<li>
+					<entry class="new">
+						<p>Proprietor: <span class="lender-name"><mark>GE MONEY HOME FINANCE LIMITED</mark></span> (Co. Regn. No. 592986) of Building 4, Hatters Lane, Croxley Green Business Park, Watford WD18 8YF.</p>
+					</entry>
+				</li>	
+	
+			</ol>
+
+			</div> <!-- end register -->
+<!-- 
+			<form>
+			    <fieldset class="inline">
+			    
+			      <legend>
+			         <span class="form-label">Is this draft register ok?</span>
+			      </legend>
+			      
+			      <div class="form-group form-group-compound">
+			      
+			        <label class="block-label" for="radio-indent-1">
+			          <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+			        </label>
+			        
+			        <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+			          <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+			        </label>
+			      
+			      </div>
+			      
+			      <div class="panel-indent js-hidden" id="autodraft-problem">
+			        <label class="form-label" for="drfating-error">Please note problem. The application will be stored, to be dealt with later</label>
+			        <textarea class="form-control" style="width:100%" id="drafting-error"></textarea>
+			      </div>
+
+			      	<a href="/quality-check-v2/dmort0003-alt" class= "button">next draft register</a>
+			      	
+			    </fieldset>
+			 </form> -->
+
+<form action="/quality-check-v2/dmort0103-alt" method="get">
+  	<fieldset class="inline">
+      <legend>
+        <span class="form-label-bold visuallyhidden">
+          If there are no problems with this draft register, please approve.
+        </span>
+      </legend>
+    </fieldset>
+    <button type="submit" id="complete-button" class="button">Approve (and get next draft)</button>
+<!--     <div style="float:right;">
+   	<a href="/quality-check-v2/list-idea-3a-2-alt" id="complete-button-2" class= "button">Approve (and return to list)</a>
+   	</div> -->
+</form>
+  <br>
+  <br>
+
+<form action="/quality-check-v2/dmort0103-alt" method="get">
+  <fieldset>
+      <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
+        <input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
+          This draft register is wrong
+      </label>
+      <div class="panel-indent js-hidden" id="cant-complete-reason">
+        <label class="form-label" for="complete-problem">Please note problem. The application will be stored, to be dealt with later</label>
+        <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
+      </div>
+    </fieldset>
+  <button type="cancel" id="store-button" class="disabled button button-cancel">Decline (and get next draft)</button>
+<!--   <div style="float:right;">
+   	<a href="/quality-check-v2/list-idea-3a-2-alt" id="store-button-2" class="disabled button">Decline (and return to list)</a>
+  </div> -->
+</form>
+
+
+ 		</div>  <!-- column-two-thirds -->
+
+        <div class="column-third right-alignedx">
+			<section class="js-stick-at-top-when-scrolling">
+            <h2 class="visuallyhidden">Participants</h2>
+<!--             <h3 class="heading-medium">Conveyancer</h3>
+            <p><span class="help-link" id="applicant-info-link">Coldpress solicitors</span></p> -->
+            <h3 class="heading-xsmall col-top">Owners</h3>
+            <p class=""><span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>,<br>
+            <span class="proprietor-name">DAVID RICHARD TOMKINSON</span>, and<br>
+            <span class="proprietor-name">MICHAEL IAN WALPOLE</span></p>
+            <h3 class="heading-xsmall">Lender</h3>
+            <p class=""><span class="help-link lender-name" id="application-info-link">GE MONEY HOME FINANCE LIMITED</span></p>
+
+
+<!--             <p><b>No prior applications</b> against this title (daylist is clear)</p> -->
+            
+<!--             <p><b>Mortgage deed has been digitally signed</b> by <span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>, <span class="proprietor-name">DAVID RICHARD TOMKINSON</span> and <span class="proprietor-name">MICHAEL IAN WALPOLE</span></p> -->
+
+			<br>
+			<div style="float:right;">
+			<a class="button button-secondary" href="/quality-check-v2/list-idea-3a-2-alt">Return to list</a> 
+			</div> 
+			</section>
+        </div> <!-- column-third -->
+
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>

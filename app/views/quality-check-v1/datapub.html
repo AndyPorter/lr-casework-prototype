@@ -1,0 +1,89 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v1/list-idea-3a" id="proposition-name">Land Registry Data</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v1.css" media="screen" rel="stylesheet" type="text/css" />
+<style>
+
+#global-header .header-wrapper {
+    background-color: #333333;  
+}
+
+div#global-header-bar {
+    height: 8px;
+    background-color: #b3d334;  
+    margin-left:30px;
+    margin-right:30px;
+}
+
+#footer .footer-meta {
+	padding-bottom:30px;
+
+}
+</style>
+
+<main id="content" role="main">
+
+  <div id="content">
+
+      <div class="grid-row">
+
+       <h1 class="heading-xlarge">Overseas ownership dataset</h1>
+
+        <div class="column-third">
+
+
+        </div> <!-- column-third -->
+
+
+        <div class="column-two-thirds">
+
+          <h2 class="heading-large">the rest of the page content here</h2>
+ 		</div>  <!-- column-two-thirds -->
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+<footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper"  style="padding-bottom:15px;">
+      <div  style="margin-left:45px;">
+          <p><a href="#">Privacy and cookie policy</a></p>
+
+          <p><a href="#">Give us feedback by email</a> or phone 0300 006 0492</p>
+
+          <p>Built by <a "href=https://www.gov.uk/government/organisations/land-registry">Land Registry</a> 2015</p>
+      </div>
+
+      </div>
+    </footer>
+
+
+{{/content}}
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>

@@ -1,0 +1,158 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+{{$propositionHeader}}<a href="/quality-check-v2/list-idea-3a" id="proposition-name">Reviewing registers</a>{{/propositionHeader}}
+{{$rightHeader}}<div class="header-stats"><span>5 to do, 7 done</span></div>{{/rightHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/quality-check-v2.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="contentx">
+
+      <div class="grid-row">
+
+      <h1 class="visuallyhidden">draft register for title: CL460071, due to application: dmort0001</h1>
+
+        <div class="column-third">
+
+			<section class="js-stick-at-top-when-scrolling">
+            <h2 class="visuallyhidden">Participants</h2>
+<!--             <h3 class="heading-medium">Conveyancer</h3>
+            <p><span class="help-link" id="applicant-info-link">Coldpress solicitors</span></p> -->
+            <h3 class="heading-xsmall col-top">Lender</h3>
+            <p class=""><span class="help-link lender-name" id="application-info-link">GE MONEY HOME FINANCE LIMITED</span></p>
+            <h3 class="heading-xsmall">Owner</h3>
+            <p class=""><span class="proprietor-name">SCOTT OAKES</span></p>
+
+<!--             <p><b>No prior applications</b> against this title (daylist is clear)</p> -->
+            
+<!--             <p><b>Mortgage deed has been digitally signed</b> by <span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>, <span class="proprietor-name">DAVID RICHARD TOMKINSON</span> and <span class="proprietor-name">MICHAEL IAN WALPOLE</span></p> -->
+
+			<br>
+			<a href="/quality-check-v2/list-idea-3a">Return to list</a>  
+			</section>
+        </div> <!-- column-quarter -->
+
+
+        <div class="column-two-thirds">
+        	<div class="call-to-action">
+				<h2 class="heading-large col-top">Approve draft register</h2>
+				<p>Title: CL460071, Application dmort0001</p>
+			</div>
+
+			<h3 class="heading-medium col-top">Property register</h3>
+			<p class="district">CORNWALL</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(22-05-2014)</span> The Freehold land shown edged with red on the plan of the above title filed at the Registry and being <span class="property-address">17 Kenilworth Road, Luton, LU1 1DQ</span>.</p>
+					</entry>
+				</li>
+			</ol>
+
+
+			<h3 class="heading-medium">Proprietorship register</h3>
+			<p class="class-of-title">Title Absolute</p>
+			<ol>
+				<li>
+					<entry>
+						<p><span class="entry-date">(22-05-2014)</span> Proprietor: <span class="proprietor-name"><mark>SCOTT OAKES</mark></span> of <span class="proprietor-address">17 Kenilworth Road, Luton LU1 1DQ</span>.</p>
+					</entry>
+				</li>
+				<li>
+					<entry>
+						<p><span class="entry-date">(22-05-2014)</span> The price stated to have been paid on <span class="pp-date">1 May 2014</span> was <span class="pp-amount">£100,000</span>.</p>
+					</entry>
+				</li>
+			</ol>
+
+			<h3 class="heading-medium">Charges register</h3>
+			<ol>
+			
+				<!-- these two c reg entries are added by the mortgage application -->
+				<h3 class="heading-small visuallyhidden"><a id="proposed-entries-c">proposed c entries</a></h3> 
+				<li>
+					<entry class="new">
+						<p>REGISTERED CHARGE dated 30 Sept 2015.</p>
+					</entry>
+				</li>
+				<li>
+					<entry class="new">
+						<p>Proprietor: <span class="lender-name"><mark>GE MONEY HOME FINANCE LIMITED</mark></span> (Co. Regn. No. 592986) of Building 4, Hatters Lane, Croxley Green Business Park, Watford WD18 8YF.</p>
+					</entry>
+				</li>	
+
+	
+			</ol>
+
+<br>
+<hr>
+<br>
+
+			<form>
+			    <fieldset class="inline">
+			    
+			      <legend>
+			         <span class="form-label">Is this draft register ok?</span>
+			      </legend>
+			      
+			      <div class="form-group form-group-compound">
+			      
+			        <label class="block-label" for="radio-indent-1">
+			          <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+			        </label>
+			        
+			        <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+			          <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+			        </label>
+			      
+			      </div>
+			      
+			      <div class="panel-indent js-hidden" id="autodraft-problem">
+			        <label class="form-label" for="drfating-error">Please note problem. The application will be stored, to be dealt with later</label>
+			        <textarea class="form-control" style="width:100%" id="drafting-error"></textarea>
+			      </div>
+
+			      	<a href="/quality-check-v2/dmort0102" class= "button">next &gt;</a>
+			<!-- 		<button type="submit" id="complete-button" class="button">next draft register</button> -->
+
+			    </fieldset>
+			 </form>
+
+
+ 		</div>  <!-- column-two thirds -->
+
+
+
+      </div> <!-- grid row -->
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+  	$( "button#complete-button" ).addClass( "disabled" );
+  }
+  else
+  {
+  	$( "button#store-button" ).addClass( "disabled" );
+  	$( "button#complete-button" ).removeClass( "disabled" );
+  }
+
+});
+</script>

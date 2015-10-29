@@ -4,6 +4,9 @@
 
 
 // gov uk overridden style
+body {
+  background-color: #F8F8F8;
+}
 
 @-ms-viewport {
   width: device-width; }
@@ -155,6 +158,9 @@
 
 .header-proposition {
   padding-left:15px;
+  width:66%;
+  float:left;
+  background-color:#0b0c0c;
 }
 
 // new style
@@ -342,11 +348,11 @@ tr.row-display-1-2{
 }
 
 .proprietor-name {
-  font-weight:normal;
+  font-weight:600;
 }
 
 .lender-name {
-  font-weight:normal;
+  font-weight:600;
 }
 
 // idea 4
@@ -378,6 +384,83 @@ tr.row-display-1-2{
 @media (min-width: 641px){.tabs-content [role="tabpanel"]{border-top:1px solid #bfc1c3}}
 .tabs-content [role="tabpanel"][aria-hidden="true"]{display:none}
 .tabs-panel-inner:focus{border:0;outline:0}
+
+.call-to-action {
+  background-color: #28A197;
+  padding:5px;
+  text-align:center;
+  text-color:white;
+}
+
+.call-to-action {
+  background-color: #28A197;
+  padding:5px;
+  text-align:center;
+}
+
+.call-to-action * {
+  background-color: inherit;
+}
+
+.right-aligned {
+  text-align:right;
+}
+
+.header-right {
+  padding-right:15px;
+  width:25%;
+  float:right;
+}
+
+.header-stats {
+  text-align:right;
+  color:white;
+  line-height:1.25; 
+  font-size:24px;
+}
+
+// register
+
+.register {
+  margin-bottom:30px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #666666;
+}
+
+.register ol {
+  margin-left:5px;
+}
+
+.entry-date {
+  color:#6f777b;
+}
+
+entry p {
+  max-width:35em;
+}
+
+// alternative buttons
+// ==========================================================================
+
+.button-secondary {
+  background-color:#2B8DAD !important;
+}
+
+.button-secondary:hover, .button-secondary:focus  {
+  background-color:#1B5B70 !important;
+}
+
+.button-cancel {
+  background-color:#E05E1D !important;
+}
+
+.button-cancel:hover, .button-cancel:focus {
+  background-color:#A34515 !important;
+}
+
+
+
+
 
 
 
