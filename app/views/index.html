@@ -2,72 +2,94 @@
 {{<internal_gov}}
 
 {{$pageTitle}}
-	digital mortgage service - internal users - protoypeing kit
+	digital mortgage service - internal users
 {{/pageTitle}}
 
 {{$homepageUrl}}/{{/homepageUrl}}
 
-{{$propositionHeader}}<span id="proposition-name">digital mortgage service - internal users</span>
+{{$propositionHeader}}<span id="proposition-name">Digital Service Transformation - processing mortgages</span>
 {{/propositionHeader}}
 
 
 {{$content}}
 
-<main id="content" role="main">
-	<h1 class="heading-xlarge">Prototyping UI for staff involved in digital mortgage work</h1>
+<main id="content" role="main" style="margin-left:10%;margin-right:20%;">
+	<h1 class="heading-xlarge">Processing digital mortgages - Design<span  class="heading-secondary">UI for staff, service thinking, user exerience.</span></h1>
 	<!-- feel free to change this page to suit your needs -->
 
-
-	<h2 class="heading-medium">To Do</h2>
+	<p class="lede">What might a UI for staff look like.  How these digital mortgages could be/are going to be registered.  What 'digital' work looks like.</p><p>Based upon -
 	<ul>
-		<li>Make this page better</li>
+		<li>what we've learnt about mortgage processing/casework from staff and stakeholders</li>
+		<li>what we've learnt about (and from) our people (staff)</li>
+		<li>what other government departments are doing - how they administer and internally process  services</li>
+		<li>what does digital world / work look like (like services you would <b>choose</b> to use at home)</li>
+	</ul>
+	</p>
+
+	<h2 class="heading-large">Design Principles</h2>
+	<p class="lede"><a class="external" href="http://design-manual.herokuapp.com/index-internal">General design princples</a> live in the <a href="http://design-manual.herokuapp.com/">design manual</a>.  Specific principles and guidance not yet general enough are listed here.</p>
+	<h3 class="heading-medium">Challenges</h3>
+	<ul class="no-bullets">
+		<li>Transformation - culture/mental models</li>
+		<li>What to call it?  Dont call it casework?  (although casework is a generic term for internal govenment work, it is a loaded term counjouring up a strong mental map/picture inside the organisation)</li>
+	</ul>
+	<p>Overview here of the summation of design principles, rules of thumb, credo, assumptions</p>
+	<p>chronology if that suits the different tacks we've taken.  else just the summation</p>
+	<p>link through to the bigger page - need to copy that across to here </p>
+	<p>tell the story</p>
+	<p>desinging for the outcomes we want (see my other repo)</p>
+	<h3 class="heading-medium">obvs...</h3>
+	<p>the 10 GDS design principles</p>
+	<h3 class="heading-medium">also... internal.gov.uk</h3>
+	<p>Cross government design meetings, collaborations and community discussions about designing internal.gov.uk systems.</p>
+
+	<h2 class="heading-large">User interfaces - phase 2<span  class="heading-secondary">Now... (from November 2015)</span></h2>
+	<p>Digital mortgages to be routed and some/all processing automated.  Either routed to exisiting estate (e.g. CORA), or routed to 'new world'.  New world to be designed to process as much as possible automatically.  Some steps might be easier/preferable to get a user to do...</p>
+	<p>morgtage application -> has priority? -> drafted register -> check register change.</p>
+	<ul>
+		<li>has priority - needs human check?  if human - check in a) exisitng systems, b) new ui</li>
+		<li>check register change - needs human check?  if human - a) check whole register?, b) a part of the register?  [i.e. how much is auto checked and how much needs human]</li>
+	</ul>
+	<h3 class="heading-medium">The Service</h3>
+	<p>Digital Mortgage is the service, most/all to be automated.  How do we monitor and administer the internal elements of the service.</p>
+	<ul>
+		<li>some sort of performance / admin ui</li>
+		<li>ability to look at 'cases' / applications</li>
+		<li>task -> ability to see the mortgage application has priority - application ahead in the queue is a the paceholder for this mortgage (towel on the deckchair) (OS(W) - search)</li>
+		<li>task -> approve/fail a draft register / section of a register / other name for a part of the whole.  Or many different small tasks - e.g. check restriction, check name discrepancy, mismatch address, etc - TBD</li>
 	</ul>
 
 
-	<h2 class="heading-large">Protos</h2>
-
-	<h3 class="heading-medium">Reviewing registers - latest (14 Oct 2015 onward)</h3>
-	<p>First set of protos for latest thinking about the digital mortgage process</p>
-	<p>User (staff member) is not processing the mortgage application.  Most is automated, and the user is to either a) deal with the exception to automatic processing, or b) quality checking the output (register) from the automatic process</p>
-	<p>a) is dealt with by exisiting applications (CORA etc).  These prototypes are about b)</p>
-	<p>We are...  quality checking (all or some) of the output (new register edition/version) of the automatic digital mortgage process</p>
-	<p><b>Not:</b> casework; or processing the application.  <b>Is:</b> quality checking / building confidence in auto process</p>
-	<p>Better/good words needed to describe this</p>
+	<h2 class="heading-large">User interfaces - phase 1 - 'alpha'<span  class="heading-secondary">March 2015 to October 2015</span></h2>
+	<h3 class="heading-medium">Sept / October 2015</h3>
+	<p>Digital mortgages to be routed and processed automatically.  Either routed to exisiting estate (e.g. CORA), or routed to 'new world'.  New world to be designed to process automatically.  But, for confidence, design a user interface to allow 'the business' be confident enough in the automatic processes.</p>
+	<p>Current thinking, is to present 'caseworkers' with the drafted copies of the whole register, to review/flag as incorrect</p>
+	<h4 class="heading-small">Untested designs, thinking in code/what it could look and feel like...</h4>
+	<p>list based ideas, slight changes in the list, variety of registers - how to check the draft, ways to progress through the 'bunch' of registers, trying different language.  The constant is the register (although trying slight variations in presentation)</p>
 	<ul>
-		<li><a href="/quality-check-v3/index">Register review: latest thoughts</a></li>
-		<li><a href="/quality-check-v2/index">Quality Check: maybe...</a></li>
-		<li><a href="/quality-check-v1/index">Quality Check: first thoughts</a></li>
+		<li><a href="/quality-check-v3/list-idea-3a"><b>latest</b></a></li>
+		<li><a href="/quality-check-v3/list-idea-3a-alt">latest - alternate version</a></li>
+		<li><a href="/quality-check-v2/list-idea-3a">previous - traditional web layout</a></li>
+		<li><a href="/quality-check-v2/list-idea-3a-alt">previous - register first</a></li>
+		<li><a href="/quality-check-v1/list-idea-1">prior - plus check for prior applications (daylist)</a>, progress feedback</li>
+		<li><a href="/quality-check-v1/list-idea-2">prior: variant 2</a></li>
+		<li><a href="/quality-check-v1/list-idea-3">prior: variant 3</a></li>
+		<li><a href="/quality-check-v1/list-idea-3a">prior: variant 3 - also has the errors found (for same user to process in CORA)</a></li>
+		<li><a href="/quality-check-v1/list-idea-3a-alt">prior: variant 3a also has the errors found (for same user to process in CORA)</a></li>
+		<li><a href="/quality-check-v1/list-idea-4">prior variant 4: simplest list</a></li>
+		<li><a href="/quality-check-v1/list">rich list 1</a></li>
+		<li><a href="/casework-v3/list-cgt">rich list 2</a></li>
 	</ul>
 
-
-	<h2 class="heading-medium">Old stuff - a different process/model - Casework proto(s) (new - 24th July onward)</h2>
-	<p>Aim: making one proto. Current: two places to get quickly started from</p>
+	<h3 class="heading-medium">July to Sept 2015</h3>
+	<p>lists, 'case' pages, and registers.  different look and feels, differing flows and presentation of information.  How might things work if documents are supplied alongside the application.  Is the simple morgtage review flow/pattern suitable for more complex application.</p>
 	<ul>
+		<li><a href="index-MS">3 versions of - casework list, case page, register tasks</a></li>
 		<li><a href="/casework-v3/index">Digital Mortgage Processing - latest version</a></li>
 		<li><a href="index-MS">Casework - Matt S starting point (bootstrap base)</a></li>
 	</ul>
 
-	<h2 class="heading-small">misc thinking - even older - Casework Jam (Mat J, Clara, Andy P)</h2>
-	<ul>
-		<li><a href="/casework-jam/dashboard">Casework - dashboard</a></li>
-		<li><a href="/casework-jam/case">Casework - case</a></li>
-		<li><a href="/casework-jam/title">Casework - title</a></li>
-	</ul>
 
-	<h2 class="heading-small">other things in the kit</h2>
-	<ul>
-		<li>
-			<a href="/examples">Example pages</a>
-		</li>
-	</ul>
-
-	<h2 class="heading-small">Resources</h2>
-
-	<ul>
-		<li>
-			<a href="">Add useful links :)</a>
-		</li>
-	</ul>
 
 </main>
 
