@@ -8,15 +8,22 @@ Needs Node 4.2.2 (previously ran on 0.10.30).
 
 ### New to this proto / want to start again
 Install node 4.2.2
+
 download zip or git clone ssh
+
 cd into folder
+
 npm install
+
 node start.js
 
 ### Have an old copy
 Install node 4.2.2
+
 git pull origin master
+
 npm install
+
 node start.js
 
 
