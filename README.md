@@ -1,4 +1,26 @@
-# GOV.UK Prototyping Kit
+# Land Registry Prototyping - Digital Mortgage Processing ('casework')
+
+Based on the GOV.UK prototyping Kit.
+
+Needs Node 4.2.2 (previously ran on 0.10.30).
+
+## Getting started
+
+### New to this proto / want to start again
+Install node 4.2.2
+download zip or git clone ssh
+cd into folder
+npm install
+node start.js
+
+### Have an old copy
+Install node 4.2.2
+git pull origin master
+npm install
+node start.js
+
+
+## GOV.UK Prototyping Kit
 
 The kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
 
