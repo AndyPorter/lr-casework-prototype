@@ -1,0 +1,94 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Casework - case{{/pageTitle}}
+
+{{$propositionHeader}}<a href="/" id="proposition-name">Digital mortgage applications</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+
+  <div id="content">
+
+    <div class="grid-row">
+
+
+        <div class="column-three-quarters">
+			<h1 class="heading-large col-top">Check priority of mortgage application</h1>
+
+			<!-- <p class="lede">Prior application(s) exist on this title, please check Daylist </p> -->
+
+			<!-- <h2 class="heading-large">Mortgage Application</h2> -->
+			<div class="text">
+
+			<ul class="no-bullets application-info">
+				<li><span class="application-info-item">CL460071</span> Title Number</li>
+				<li><span class="application-info-item">A000101</span> Application Reference</li>
+				<li><span class="application-info-item">Shawbrook Bank Limited</span> Lender (Applicant)</li>
+				<li><span class="application-info-item">Coldpress Solicitors</span> Conveyancer (Submitted by)</li>
+			</ul>
+
+			</div>
+
+		</div>
+	</div>
+	<br>
+
+	<div class="grid-row">	
+
+		<div class="column-three-quarters">
+
+
+			<form>
+			    <fieldset class="inline">
+			    
+			      <legend>
+			         <span class="form-label">Can this mortgage application be processed?</span>
+			      </legend>
+			      
+			      <div class="form-group form-group-compound">
+			      
+			        <label class="block-label" for="radio-indent-1">
+			          <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+			        </label>
+			        
+			        <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+			          <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+			        </label>
+			      
+			      </div>
+			      
+			      <div class="panel-indent js-hidden" id="autodraft-problem">
+			        <label class="form-label" for="drafting-error">Please note problem. The application will be stored, to be dealt with later</label>
+			        <textarea class="form-control" style="width:100%" id="drafting-error">Application A000101, on Title CL460071, could not be processed becasue... </textarea>
+			      </div>
+
+			      	<a href="a000101-draft-register" class= "button">Continue</a>
+			<!-- 		<button type="submit" id="complete-button" class="button">next draft register</button> -->
+			    </fieldset>
+			 </form>
+
+
+ 		</div>  <!-- column-two-thirds -->
+
+    </div> <!-- grid row -->
+
+<br>
+    <div class="grid-row">	
+		<div class="column-three-quarters">
+			<p><a style="float:right;" href="caselist-01">Return to caselist</a></p>
+		</div>
+	</div>
+
+
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
