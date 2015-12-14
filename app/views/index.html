@@ -15,9 +15,12 @@
 
 <main id="content" role="main" style="margin-left:10%;margin-right:20%;">
 	<h1 class="heading-xlarge">Processing digital mortgages - Design<span  class="heading-secondary">UI for staff, service thinking, user exerience.</span></h1>
-	<!-- feel free to change this page to suit your needs -->
 
-	<p class="lede">What might a User interface for staff look like.  How these digital mortgages could be/are going to be registered.  What 'digital' work looks like.</p><p>Based upon -
+	<h2 class="heading-large">The Service</h2>
+	<p>Digital Mortgage is the service.  How do we process, monitor and administer the internal elements of the service.</p>
+
+	<h2 class="heading-large">Internal Processing</h2>
+	<p>What might a User interface for staff look like.  How these digital mortgages could be/are going to be registered.  What 'digital' work looks like.</p><p>Based upon -
 	<ul>
 		<li>what we've learnt about mortgage processing/casework from staff and stakeholders</li>
 		<li>what we've learnt about (and from) our people (staff)</li>
@@ -26,24 +29,67 @@
 	</ul>
 	</p>
 
+
 	<h2 class="heading-large">Design Principles</h2>
-	<p class="lede"><a rel="external" href="http://design-manual.herokuapp.com/index-internal">General design principles</a> live in the <a rel="external" href="http://design-manual.herokuapp.com/">design manual</a>.  Specific principles and guidance not yet general enough are listed here.</p>
+	<p><a rel="external" href="http://design-manual.herokuapp.com/index-internal">General design principles</a> live in the <a rel="external" href="http://design-manual.herokuapp.com/">design manual</a>.  Specific principles and guidance not yet general enough are listed here.</p>
 
 
-	<h2 class="heading-large">User interfaces - phase 2<span  class="heading-secondary">Now... (from November 2015)</span></h2>
-	<p>Digital mortgages to be routed and some/all processing automated.  Either routed to exisiting estate (e.g. CORA), or routed to 'new world'.  New world to be designed to process as much as possible automatically.  Some steps might be easier/preferable to get a user to do...</p>
-	<p>morgtage application -> has priority? -> drafted register -> check register change.</p>
+	<h2 class="heading-large">Beta<span  class="heading-secondary">(from November 2015)</span></h2>
+	<p class="lede">'phase 1' (in team delivery plan)</p>
+	<p>Very linear flow, mirroring current process, no case/application is fully automatic - every case has multiple manual steps</p>
+	<p>Main block to automation - prior application check (daylist).  Unblock daylist and UI flow likely to be very different/efficient</p>
+	<p>Happy Flow = 1) pick from case list -> 2) application has priority? -> 3) auto drafted register ok? -> 4) complete prior applications (mark-off) -> 5) complete mortgage application (mark-off)</p>
+	<p>Alternate flows: from steps 2, 3, 4, and 5 in happy flow = 1) capture failure reasons 2) process in current casework systems (send case to ERSV).</p>
+	<p>Happy Flow, Steps 1 and 4 require person to check, and take action, in existing systems</p>
+	<h4 class="heading-small">Design constraints / parameters / assumptions</h4>
+	<p>Given the expectation of very few applications.. what is the minimum thing we can do, and then iterate rapidly (based on adding most value)...</p>
 	<ul>
-		<li>has priority - needs human check?  if human - check in a) exisitng systems, b) new ui</li>
-		<li>check register change - needs human check?  if human - a) check whole register?, b) a part of the register?  [i.e. how much is auto checked and how much needs human]</li>
+		<li>tens of applications a day (less than 100)</li>
+		<li>only 1 or 2 staff using system (so they will share same list - no need to 'lock' applications</li>
+		<li>no need to login - application/system logs will record who did what</li>
+		<li>settings staff need (such as friendly name - not staff id) will be hardcoded (no need for UI to manage settings)
+		<li>staff based physically close to development team (preferably embeded)</li>
+		<li>staff in contact with each other</li>
+		<li>staff empowered/have enough knowledge to accept draft registers without guidance from this system</li>
+		<li>development team will support - primary contact point for problems, and will manage errors/support</li>
+		<li>case progress is not stored - user must complete steps 1 to 5, or start again</li>
+		<li>both staff could start to process the same case - but first to end will complete (mark it off) - no case locking - satff to manage work between them - not the system</li>
+		<li>when case sent to ESRV - other staff will process* (*we wont be able to monitor full appliction journey)</li>
+		<li>not designed for all staff - may not be fully accessible</li>
+		<li>designed for desktop device and modern browser - lastest + latest-1 version of firefox/chrome/IE</li>
+		<li>the system does not contain instructions on how to use itself</li>
+		<li>on day 1 - the system will only contain minimal practice/processing instructions</li>
+		<li>the system will resolutely make minimal integration with current systems - only where absolutely necessary to interact with a register or manage applications</li>
+		<li>the system should give the staff using it feedback on progress/cases completed</li>
+		<li>minimum required = a list, a flow to process, a flow to capture problems, feedback to staff on progress, basic metrics, trust in the system, close working with dev team (one team)</li>
+		<li>will need re designing if changes to the above occur</li>
 	</ul>
-	<h3 class="heading-medium">The Service</h3>
-	<p>Digital Mortgage is the service, most/all to be automated.  How do we monitor and administer the internal elements of the service.</p>
+
+	<h3 class="heading-medium">Version 1 - Dec 10 2015</h3>
+	<h4 class="heading-small">To Do</h4>
 	<ul>
+		<li>Framing the problem - decisions required on assumptions above (design likely to change)</li>
+		<li>More thought required at setp 4/5 - decide what to do if failure at step 5 - e.g. if staff have then completed/actioned search application at step 4</li>
 		<li>some sort of performance / admin ui</li>
-		<li>ability to look at 'cases' / applications</li>
-		<li>task -> ability to see the mortgage application has priority - application ahead in the queue is a the paceholder for this mortgage (towel on the deckchair) (OS(W) - search)</li>
-		<li>task -> approve/fail a draft register / section of a register / other name for a part of the whole.  Or many different small tasks - e.g. check restriction, check name discrepancy, mismatch address, etc - TBD</li>
+		<li>capture metrics at each stage - especially when going down alternate flows leading to processing in exisiting systems - to surface in admin interface</li>
+		<li>Scenarios required to test each flow combination</li>
+		<li>Tests for each flow variant</li>
+		<li>UI tests</li>
+		<li>make flow diagram for team</li>
+		<li>Make 'homepage for staff' processing casework</li>
+		<li>Make 'homepage for staff' managing casework</li>
+		<li>document the design / widget patterns - so we can name them well, and construct reusable assests (classes and style).  Describe the 'widgets', their purpose, functionality, etc. One per record card</li>
+		<li>check this page, and proto, against my book notes</li>
+		<li>Update kit</li>
+		<li>put design principles in design manual - design principles annotated poster gone missing!</li>
+	</ul>	
+	<h4 class="heading-small">TL;DR; Enough scene setting - show me the thing :)</h4>
+	<ul>
+		<h4 class="heading-small">Flows and Pages - beta minimum</h4>
+		<li><a href='beta-v1/caselist-01'>Basic happy flow V1</a></li>
+		<h4 class="heading-small">Pages - beyond day 1 beta (direction of travel)</h4>
+		<li><a href='beta-v1/list-rich-1-cgt'>Caselist - enriched - type 1</a></li>
+		<li><a href='beta-v1/list-rich-2'>Caselist - enriched - type 2</a></li>
 	</ul>
 
 <hr>
