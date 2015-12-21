@@ -16,18 +16,18 @@
 
 
         <div class="column-three-quarters">
-			<h1 class="heading-large col-top">Check priority of mortgage application</h1>
+			<h1 class="heading-large col-top">Remove search application</h1>
 
-			<!-- <p class="lede">Prior application(s) exist on this title, please check Daylist </p> -->
+			<p class="lede">If an affecting search application was present, manually mark it off</p>
 
 			<!-- <h2 class="heading-large">Mortgage Application</h2> -->
 			<div class="text">
 
 			<ul class="no-bullets application-info">
 				<li><span class="application-info-item">CL460071</span> Title Number</li>
-				<li><span class="application-info-item">A000101</span> Application Reference</li>
-				<li><span class="application-info-item">Shawbrook Bank Limited</span> In favour of (Lender)</li>
-				<li><span class="application-info-item">Coldpress Solicitors</span> Submitted by (Conveyancer)</li>
+				<!-- <li><span class="application-info-item">A000101</span> Application Reference</li> -->
+				<li><span class="application-info-itemx">Shawbrook Bank Limited: </span> Lender (Applicant)</li>
+				<li><span class="application-info-itemx">Coldpress Solicitors: </span> Conveyancer (Submitted by)</li>
 			</ul>
 
 			</div>
@@ -41,11 +41,11 @@
 		<div class="column-three-quarters">
 
 
-			<form action="a000101-draft-register">
+			<form action="a000101-completed">
 			    <fieldset class="inline">
 			    
 			      <legend>
-			         <span class="form-label-bold">Can this mortgage application be processed?</span>
+			         <span class="form-label-bold">Was this search mark-off successful?</span>
 			      </legend>
 			      
 			      <div class="form-group form-group-compound">
@@ -59,14 +59,26 @@
 			        </label>
 			      
 			      </div>
+
+<!-- 			      <div class="form-group form-group-compound">
+			      <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
+			        <input id="radio-indent-1" type="radio" name="knowsni" value="Yes">
+			        Yes
+			      </label>
+			      <label class="block-label" for="radio-indent-2">
+			        <input id="radio-indent-2" type="radio" name="knowsni" value="No">
+			        No
+			      </label>
+			    </div> -->
 			      
 			      <div class="panel-indent js-hidden" id="autodraft-problem">
-			        <label class="form-label" for="priority-error">Please note problem. The application will be stored, to be dealt in existing systems</label>
-			        <textarea class="form-control" style="width:100%" id="priority-error">Application A000101, on Title CL460071, could not be processed because... </textarea>
+			        <label class="form-label" for="priority-error">Please note problem. It will be dealt in existing systems</label>
+			        <textarea class="form-control" style="width:100%" id="priority-error">In processing Application A000101, on Title CL460071, the search affecting this application could not be marked-off because... </textarea>
 			      </div>
 
-			      	<!-- <a href="a000101-draft-register" class= "button">Continue</a> -->
-					<div class="form-group">
+			      	<!-- <a href="a000101-completed" class= "button">Continue</a> -->
+
+				  	<div class="form-group">
 	  					<button type="submit" class="button">Continue</button>
 	  				</div>
 			    </fieldset>

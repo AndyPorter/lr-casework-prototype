@@ -351,6 +351,7 @@ tr.row-display-1-2{
   margin-top:30px;
 }
 
+// application info panel
 .proprietor-name {
   font-weight:600;
 }
@@ -358,6 +359,11 @@ tr.row-display-1-2{
 .lender-name {
   font-weight:600;
 }
+
+.application-id {
+  font-weight:600;
+}
+
 
 // idea 4
 
@@ -470,6 +476,27 @@ span.application-info-item {
   color:#ffffff; 
   padding:5px;
 }
+
+
+
+.mortgage-successful {
+width: 100%;
+margin-bottom: 10px;
+margin-top: 10px;
+padding-top: 2px;
+padding-bottom: 40px;
+background-color: #30a197;
+text-align: center; }
+
+.mortgage-successful h1 {
+color: white;
+font-size: 2em;
+font-weight: bold; }
+
+.mortgage-successful p {
+color: white;
+margin-top: 10px;
+margin-bottom: 10px; }
 
 
 

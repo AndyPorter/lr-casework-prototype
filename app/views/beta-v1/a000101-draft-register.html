@@ -14,7 +14,7 @@
     <div class="grid-row">
 
       	<div class="column-two-thirds">
-      		<h1 class="heading-large col-top">Check draft register <span class="application-info-item">A000101</span> 
+      		<h1 class="heading-large col-top">Check draft register 
 			<span class="heading-secondary"></span></h1>
 		</div>
 
@@ -25,7 +25,7 @@
 
 			<div class="register">
 
-			<h2 class="heading-large col-top">Register of title <span class="application-info-item">CL460071</span></h2>
+			<h2 class="heading-medium col-top">Register of title <span class="application-info-item">CL460071</span></h2>
 
 			<h3 class="heading-medium">Property register</h3>
 			<p class="district">CORNWALL</p>
@@ -75,68 +75,36 @@
 			</div> <!-- end register -->
 
 
-<!-- 			<form>
+			<form action="a000101-search-markoff">
 			    <fieldset class="inline">
 			    
 			      <legend>
-			         <span class="form-label">Is this draft register ok?</span>
+			         <span class="form-label-bold">Is this drafted register correct?</span>
 			      </legend>
 			      
 			      <div class="form-group form-group-compound">
 			      
 			        <label class="block-label" for="radio-indent-1">
-			          <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+			          <input id="radio-indent-1" name="radioindentgroup" value="Yes" type="radio"> Yes
 			        </label>
 			        
 			        <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
-			          <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+			          <input id="radio-indent-2" name="radioindentgroup" value="No" type="radio"> No
 			        </label>
 			      
 			      </div>
 			      
 			      <div class="panel-indent js-hidden" id="autodraft-problem">
-			        <label class="form-label" for="drfating-error">Please note problem. The application will be stored, to be dealt with later</label>
-			        <textarea class="form-control" style="width:100%" id="drafting-error"></textarea>
+			        <label class="form-label" for="draft-error">Please note problem. The application will be stored, to be dealt in existing systems</label>
+			        <textarea class="form-control" style="width:100%" id="draft-error">Application A000101, on Title CL460071, could not be processed because... </textarea>
 			      </div>
 
-			      	<a href="/quality-check-v3/dmort0102-alt" class= "button">next draft register</a>
-
+			      	<!-- <a href="a000101-search-markoff" class= "button">Continue</a> -->
+					<div class="form-group">
+	  					<button type="submit" class="button">Continue</button>
+	  				</div>
 			    </fieldset>
-			 </form> -->
-
-<form action="/quality-check-v3/dmort0102" method="get">
-  	<fieldset class="inline">
-      <legend>
-        <span class="form-label-bold visuallyhidden">
-          If there are no problems with this draft register, please approve.
-        </span>
-      </legend>
-    </fieldset>
-    <button type="submit" id="complete-button" class="button">Approve (and get next draft)</button>
-<!--     <div style="float:right;">
-   	<a href="/quality-check-v3/list-idea-3a-2-alt" id="complete-button-2" class= "button">Approve (and return to list)</a>
-   	</div> -->
-</form>
-  <br>
-  <br>
-
-<form action="/quality-check-v3/dmort0102" method="get">
-  <fieldset>
-      <label class="block-label" for="cannot-complete-application" data-target="cant-complete-reason">
-        <input id="cannot-complete-application" type="checkbox" value="cannot-complete-application">
-          This draft register is wrong
-      </label>
-      <div class="panel-indent js-hidden" id="cant-complete-reason">
-        <label class="form-label" for="complete-problem">Please note problem. The application will be stored, to be dealt with later</label>
-        <textarea class="form-control" style="width:100%" id="complete-problem"></textarea>
-      </div>
-    </fieldset>
-  <button type="cancel" id="store-button" class="disabled button button-cancel">Decline (and get next draft)</button>
-<!--   <div style="float:right;">
-   	<a href="/quality-check-v3/list-idea-3a-2-alt" id="store-button-2" class="disabled button">Decline (and return to list)</a>
-  </div> -->
-</form>
-
+			 </form>
 
 
 
@@ -148,7 +116,8 @@
             <h2 class="visuallyhidden">Participants</h2>
 <!--             <h3 class="heading-medium">Conveyancer</h3>
             <p><span class="help-link" id="applicant-info-link">Coldpress solicitors</span></p> -->
-            <h3 class="heading-xsmall col-top">Owner</h3>
+            <h3 class="heading-xsmall col-top">Application <span class="application-id">A000101</span></h3>
+            <h3 class="heading-xsmall col-top">Borrower</h3>
             <p class=""><span class="proprietor-name">SCOTT OAKES</span></p>
             <h3 class="heading-xsmall">Lender</h3>
             <p class=""><span class="help-link lender-name" id="application-info-link">GE MONEY HOME FINANCE LIMITED</span></p>
@@ -158,14 +127,20 @@
             
 <!--             <p><b>Mortgage deed has been digitally signed</b> by <span class="proprietor-name">DAPHNE ANNE TOMKINSON</span>, <span class="proprietor-name">DAVID RICHARD TOMKINSON</span> and <span class="proprietor-name">MICHAEL IAN WALPOLE</span></p> -->
 
-			<br>
+<!-- 			<br>
 			<div style="float:right;">
 			<a class="button button-secondary" href="/quality-check-v3/list-idea-3a">Return to list</a>  
-			</div>
+			</div> -->
 			</section>
         </div> <!-- column-third -->
 
       </div> <!-- grid row -->
+      <br>
+	    <div class="grid-row">	
+			<div class="column-two-thirds">
+				<p><a style="float:right;" href="caselist-01">Return to caselist</a></p>
+			</div>
+		</div>
 
   </div> <!-- content -->
 
