@@ -21,12 +21,17 @@ var router = express.Router();
 
   // No catchers
 
+  router.get('/:version/applications', function (req, res) {
+    var version =  req.params.version;
+    res.render(version + '/caselist-01', { 'version' : version });
+  });
+
   router.get('/:version/a000101-draft-register', function(req, res, next) {
     var version =  req.params.version;
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/' + version + '/a000101-completed-old-world');
+      res.redirect('/' + version + '/a000101-completed-old-world', { 'version' : version });
     } else {
       next();
     }
@@ -37,7 +42,7 @@ var router = express.Router();
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/' + version + '/a000101-completed-old-world');
+      res.redirect('/' + version + '/a000101-completed-old-world', { 'version' : version });
     } else {
       next();
     }
@@ -49,7 +54,7 @@ var router = express.Router();
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/' + version + '/a000101-completed-old-world-reg-done');
+      res.redirect('/' + version + '/a000101-completed-old-world-reg-done', { 'version' : version });
     } else {
       next();
     }
