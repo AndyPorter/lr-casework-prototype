@@ -21,32 +21,35 @@ var router = express.Router();
 
   // No catchers
 
-  router.get('/beta-v1/a000101-draft-register', function(req, res, next) {
+  router.get('/:version/a000101-draft-register', function(req, res, next) {
+    var version =  req.params.version;
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/beta-v1/a000101-completed-old-world');
+      res.redirect('/' + version + '/a000101-completed-old-world');
     } else {
       next();
     }
   });
 
-  router.get('/beta-v1/a000101-search-markoff', function(req, res, next) {
+  router.get('/:version/a000101-search-markoff', function(req, res, next) {
+    var version =  req.params.version;
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/beta-v1/a000101-completed-old-world');
+      res.redirect('/' + version + '/a000101-completed-old-world');
     } else {
       next();
     }
   });
 
 
-  router.get('/beta-v1/a000101-completed', function(req, res, next) {
+  router.get('/:version/a000101-completed', function(req, res, next) {
+    var version =  req.params.version;
     var answer = req.query.radioindentgroup;
     console.log(answer);
     if (answer === 'No') {
-      res.redirect('/beta-v1/a000101-completed-old-world-reg-done');
+      res.redirect('/' + version + '/a000101-completed-old-world-reg-done');
     } else {
       next();
     }
@@ -54,24 +57,24 @@ var router = express.Router();
 
     //   app.get('/examples/step1name', function (req, res) {
     //   res.render('examples/step1', { 'name' : 'Bob' });
-    // });   
+    // });
 
     // app.get('/examples/step2', function (req, res) {
     //   if (req.query.knowsni == 'No') {
-    //   res.render('examples/step2', 
-    //       {   'name' : req.query.fullname, 
-    //         'age' : req.query.age, 
+    //   res.render('examples/step2',
+    //       {   'name' : req.query.fullname,
+    //         'age' : req.query.age,
     //         'feeling' : req.query.feeling,
     //         'knowsni' : 'doesnt know ni'
     //       });
     //   } else {
-    //       res.render('examples/step2', 
-    //       {   'name' : req.query.fullname, 
-    //         'age' : req.query.age, 
+    //       res.render('examples/step2',
+    //       {   'name' : req.query.fullname,
+    //         'age' : req.query.age,
     //         'feeling' : req.query.feeling
     //       });
     //   };
-    // }); 
+    // });
 
 
 
@@ -182,5 +185,3 @@ var router = express.Router();
 
 
 module.exports = router;
-
-
