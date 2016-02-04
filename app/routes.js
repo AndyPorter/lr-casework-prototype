@@ -15,16 +15,23 @@ var router = express.Router();
 // });
 
 
-  // beta stuff
 
-  // beta v1
-
-  // No catchers
 
   router.get('/:version/applications', function (req, res) {
     var version =  req.params.version;
-    res.render(version + '/caselist-01', { 'version' : version });
+    res.render(version + '/applications', { 'version': version, 'done': 2, 'total': 8 });
   });
+
+  router.get('/:version/applications/:application', function (req, res) {
+    var version = req.params.version;
+    var application = req.params.application;
+
+    res.render(version + '/application', { 'version': version });
+  });
+
+  // beta stuff
+  // beta v1
+  // No catchers
 
   router.get('/:version/a000101-draft-register', function(req, res, next) {
     var version =  req.params.version;
