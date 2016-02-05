@@ -11,7 +11,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <h1 class="heading-large col-top">Check draft register</h1>
-      <h2 class="heading-medium col-top">Register of title <span class="application-info-item">{{data.title_number}}</span></h2>
+      <h2 class="heading-medium col-top">Title <span class="application-info-item">{{data.title_number}}</span></h2>
       <h2 class="heading-medium col-top">Application <span class="application-info-item">{{application}}</span></h2>
     </div>
   </div>
@@ -58,28 +58,26 @@
       </div> <!-- end register -->
 
 
-      <form action="a000101-search-markoff">
+      <form action="completed">
         <fieldset class="inline">
 
           <legend>
-            <span class="form-label-bold">Is this drafted register correct?</span>
+            <span class="form-label-bold">Can this drafted register be automatically processed?</span>
           </legend>
 
           <div class="form-group form-group-compound">
-
             <label class="block-label" for="radio-indent-1">
-              <input id="radio-indent-1" name="radioindentgroup" value="Yes" type="radio"> Yes
+              <input id="radio-indent-1" name="correct" value="true" type="radio"> Yes
             </label>
 
             <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
-              <input id="radio-indent-2" name="radioindentgroup" value="No" type="radio"> No
+              <input id="radio-indent-2" name="correct" value="false" type="radio"> No
             </label>
-
           </div>
 
           <div class="panel-indent js-hidden" id="autodraft-problem">
             <label class="form-label" for="draft-error">Please note problem. The application will be stored, to be dealt in existing systems</label>
-            <textarea class="form-control" style="width:100%" id="draft-error">Application A000101, on Title CL460071, could not be processed because... </textarea>
+            <textarea class="form-control" style="width:100%" id="draft-error">Application {{application}}, on Title {{data.title_number}}, could not be processed because... </textarea>
           </div>
 
           <!-- <a href="a000101-search-markoff" class= "button">Continue</a> -->
