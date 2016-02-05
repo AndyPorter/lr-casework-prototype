@@ -1,0 +1,128 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Digital Mortgage - Draft Register{{/pageTitle}}
+{{$propositionHeader}}<a href="/" id="proposition-name">Digital Mortgage Service</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+  <div id="content">
+    <div class="grid-row">
+
+      <div class="column-two-thirds">
+        <h1 class="heading-large col-top">Check draft register
+          <span class="heading-secondary"></span></h1>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+
+          <div class="register">
+            <h2 class="heading-medium col-top">Register of title <span class="application-info-item">{{data.title_number}}</span></h2>
+            <h3 class="heading-medium">Property register</h3>
+            <p class="district">{{data.district}}</p>
+            <ol>
+              {{#data.register.property}}
+              <li>
+                <entry>
+                  <p>{{text}}<br><span class="entry-date">({{date}})</span></p>
+                </entry>
+              </li>
+              {{/data.register.property}}
+            </ol>
+
+
+            <h3 class="heading-medium">Proprietorship register</h3>
+            <p class="class-of-title">{{data.class}}</p>
+            <ol>
+              {{#data.register.proprietorship}}
+              <li>
+                <entry>
+                  <p>{{text}}<br><span class="entry-date">({{date}})</span></p>
+                </entry>
+              </li>
+              {{/data.register.proprietorship}}
+            </ol>
+
+            <h3 class="heading-medium">Charges register</h3>
+            <ol>
+              {{#data.register.charges}}
+              <li>
+                <entry class="new">
+                  <p>{{text}}</p>
+                </entry>
+              </li>
+              {{/data.register.charges}}
+            </ol>
+          </div> <!-- end register -->
+
+
+          <form action="a000101-search-markoff">
+            <fieldset class="inline">
+
+              <legend>
+                <span class="form-label-bold">Is this drafted register correct?</span>
+              </legend>
+
+              <div class="form-group form-group-compound">
+
+                <label class="block-label" for="radio-indent-1">
+                  <input id="radio-indent-1" name="radioindentgroup" value="Yes" type="radio"> Yes
+                </label>
+
+                <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+                  <input id="radio-indent-2" name="radioindentgroup" value="No" type="radio"> No
+                </label>
+
+              </div>
+
+              <div class="panel-indent js-hidden" id="autodraft-problem">
+                <label class="form-label" for="draft-error">Please note problem. The application will be stored, to be dealt in existing systems</label>
+                <textarea class="form-control" style="width:100%" id="draft-error">Application A000101, on Title CL460071, could not be processed because... </textarea>
+              </div>
+
+              <!-- <a href="a000101-search-markoff" class= "button">Continue</a> -->
+              <div class="form-group">
+                <button type="submit" class="button">Continue</button>
+              </div>
+            </fieldset>
+          </form>
+
+
+
+        </div>  <!-- column-two thirds -->
+    </div> <!-- grid row -->
+  </div> <!-- content -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+    $( "button#complete-button" ).addClass( "disabled" );
+    $( "a#store-button-2" ).removeClass( "disabled" );
+    $( "a#complete-button-2" ).addClass( "disabled" );
+  }
+  else
+  {
+    $( "button#store-button" ).addClass( "disabled" );
+    $( "button#complete-button" ).removeClass( "disabled" );
+    $( "a#store-button-2" ).addClass( "disabled" );
+    $( "a#complete-button-2" ).removeClass( "disabled" );
+  }
+
+});
+</script>
