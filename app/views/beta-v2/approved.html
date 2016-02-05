@@ -7,24 +7,22 @@
 <link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
 
 <main id="content" role="main">
-  <div id="content">
-    <div class="grid-row">
-      <div class="column-three-quarters">
-        <div class="mortgage-successful">
-          <h1 class="heading-large">Application {{application}} approved</h1>
-          <p class="lede">Draft register of title {{data.title_number}} will now be automatically processed.</p>
-        </div>
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <div class="mortgage-successful">
+        <h1 class="heading-large">Application {{application}} approved</h1>
+        <p class="lede">Draft register of title {{data.title_number}} will now be automatically processed.</p>
       </div>
     </div>
+  </div>
 
-    <div class="grid-row">
-      <div class="column-three-quarters">
-        <p><a href="caselist-01">Return to caselist</a></p>
-        <p>or</p>
-        <a class="button button-start" href="/{{version}}/applications/a000101/draft" role="button">Next Application</a>
-      </div>
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <p><a href="caselist-01">Return to caselist</a></p>
+      <p>or</p>
+      <a class="button button-start" href="/{{version}}/applications/a000101/draft" role="button">Next Application</a>
     </div>
-  </div> <!-- content -->
+  </div>
 </main>
 
 {{/content}}
