@@ -14,7 +14,7 @@ router.get('/:version/applications/:application/draft', function (req, res) {
   var application = req.params.application;
   var data = fs.readFileSync(__dirname + '/views/' + version + '/data/' + application + '.json');
   var parsedData = JSON.parse(data);
-  res.render(version + '/draft_register', { "data": parsedData, "application": application });
+  res.render(version + '/draft_register', { "data": parsedData, "application": application, 'version': version });
 });
 
 router.get('/:version/applications/:application/completed', function (req, res) {
@@ -25,9 +25,9 @@ router.get('/:version/applications/:application/completed', function (req, res) 
   var parsedData = JSON.parse(data);
 
   if (correct == "true") {
-    res.render(version + '/approved', { "data": parsedData, "application": application });
+    res.render(version + '/approved', { "data": parsedData, "application": application, 'version': version });
   } else {
-    res.render(version + '/rejected', { "data": parsedData, "application": application });
+    res.render(version + '/rejected', { "data": parsedData, "application": application, 'version': version });
   }
 });
 
