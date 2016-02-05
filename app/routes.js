@@ -17,6 +17,14 @@ router.get('/:version/applications/:application/draft', function (req, res) {
   res.render(version + '/draft_register', { "data": parsedData, "application": application, 'version': version });
 });
 
+router.get('/:version/applications/:application/related', function (req, res) {
+  var version = req.params.version;
+  var application = req.params.application;
+  var data = fs.readFileSync(__dirname + '/views/' + version + '/data/' + application + '.json');
+  var parsedData = JSON.parse(data);
+  res.render(version + '/related', { "data": parsedData, "application": application, 'version': version });
+});
+
 router.get('/:version/applications/:application/completed', function (req, res) {
   var version = req.params.version;
   var application = req.params.application;

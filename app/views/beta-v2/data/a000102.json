@@ -1,4 +1,7 @@
 {
+  "related": {
+    "application": "a000234"
+  },
   "title_number": "CL098765",
   "district": "CORNWALL",
   "class": "Title Absolute",
@@ -34,5 +37,6 @@
         "new": true
       }
     ]
-  }
+  },
+  "next": "a000103"
 }

@@ -1,4 +1,5 @@
 {
+  "related": null,
   "title_number": "CL460071",
   "district": "CORNWALL",
   "class": "Title Absolute",
@@ -34,5 +35,6 @@
         "new": true
       }
     ]
-  }
+  },
+  "next": "a000102"
 }

@@ -1,0 +1,72 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Digital Mortgage - Related Application{{/pageTitle}}
+
+{{$propositionHeader}}<a href="/" id="proposition-name">Digital Mortgage Service</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <h1 class="heading-large col-top">Check priority of mortgage application</h1>
+    <div class="column-one-half">
+      <h2 class="heading-medium col-top">This application:</h2>
+      <div class="text">
+        <ul class="no-bullets application-info">
+          <li><span class="application-info-item">{{data.title_number}}</span> Title Number</li>
+          <li><span class="application-info-item">{{application}}</span> Application Reference</li>
+          <li><span class="application-info-item">Shawbrook Bank Limited</span> In favour of (Lender)</li>
+          <li><span class="application-info-item">Coldpress Solicitors</span> Submitted by (Conveyancer)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-one-half">
+      <h2 class="heading-medium col-top">Related application <span class="application-info-item">{{data.related.application}}</span></h2>
+      <div class="text">
+        <ul class="no-bullets application-info">
+          <li><span class="application-info-item">CL460071</span> Title Number</li>
+          <li><span class="application-info-item">{{data.related.application}}</span> Application Reference</li>
+          <li><span class="application-info-item">Shawbrook Bank Limited</span> In favour of (Lender)</li>
+          <li><span class="application-info-item">Coldpress Solicitors</span> Submitted by (Conveyancer)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <form action="draft">
+        <fieldset class="inline">
+          <legend>
+            <span class="form-label-bold">Are these applications related?</span>
+          </legend>
+
+          <div class="form-group form-group-compound">
+            <label class="block-label" for="radio-indent-1">
+              <input id="radio-indent-1" name="related" value="true" type="radio"> Yes
+            </label>
+
+            <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+              <input id="radio-indent-2" name="related" value="false" type="radio"> No
+            </label>
+          </div>
+
+          <div class="panel-indent js-hidden" id="autodraft-problem">
+            <label class="form-label" for="priority-error">Please note problem. The application will be stored, to be dealt in existing systems</label>
+            <textarea class="form-control" style="width:100%" id="priority-error">Application A000101, on Title CL460071, could not be processed because... </textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="button">Continue</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>  <!-- column-two-thirds -->
+
+  </div> <!-- grid row -->
+</main>
+
+{{/content}}
+{{/internal_gov}}
