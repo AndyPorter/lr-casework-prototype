@@ -25,7 +25,7 @@ router.get('/:version/applications/:application/related', function (req, res) {
   res.render(version + '/related', { "data": parsedData, "application": application, 'version': version });
 });
 
-router.get('/:version/applications/:application/completed', function (req, res) {
+router.get('/:version/applications/:application/confirm', function (req, res) {
   var version = req.params.version;
   var application = req.params.application;
   var correct = req.query.correct;

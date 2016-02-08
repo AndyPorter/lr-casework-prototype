@@ -11,25 +11,25 @@
 <main id="content" role="main">
   <div class="grid-row">
     <h1 class="heading-large col-top">Check priority of mortgage application</h1>
-    <div class="column-one-half">
+    <div class="column-half">
       <h2 class="heading-medium col-top">This application:</h2>
       <div class="text">
         <ul class="no-bullets application-info">
-          <li><span class="application-info-item">{{data.title_number}}</span> Title Number</li>
-          <li><span class="application-info-item">{{application}}</span> Application Reference</li>
-          <li><span class="application-info-item">Shawbrook Bank Limited</span> In favour of (Lender)</li>
-          <li><span class="application-info-item">Coldpress Solicitors</span> Submitted by (Conveyancer)</li>
+          <li>Title: <span class="application-info-item">{{data.title_number}}</span></li>
+          <li>Application: <span class="application-info-item">{{application}}</span></li>
+          <li>Lender: <span class="application-info-item">{{data.lender}}</span></li>
+          <li>Conveyancer: <span class="application-info-item">{{data.conveyancer}}</span></li>
         </ul>
       </div>
     </div>
-    <div class="column-one-half">
-      <h2 class="heading-medium col-top">Related application <span class="application-info-item">{{data.related.application}}</span></h2>
+    <div class="column-half">
+      <h2 class="heading-medium col-top">Other Application:</h2>
       <div class="text">
         <ul class="no-bullets application-info">
-          <li><span class="application-info-item">CL460071</span> Title Number</li>
-          <li><span class="application-info-item">{{data.related.application}}</span> Application Reference</li>
-          <li><span class="application-info-item">Shawbrook Bank Limited</span> In favour of (Lender)</li>
-          <li><span class="application-info-item">Coldpress Solicitors</span> Submitted by (Conveyancer)</li>
+          <li>Title: <span class="application-info-item">{{data.related.title_number}}</span></li>
+          <li>Application: <span class="application-info-item">{{data.related.application}}</span></li>
+          <li>Lender: <span class="application-info-item">{{data.related.lender}}</span></li>
+          <li>Conveyancer: <span class="application-info-item">{{data.related.conveyancer}}</span></li>
         </ul>
       </div>
     </div>
@@ -40,7 +40,7 @@
       <form action="draft">
         <fieldset class="inline">
           <legend>
-            <span class="form-label-bold">Are these applications related?</span>
+            <span class="form-label-bold">Are these two applications related?</span>
           </legend>
 
           <div class="form-group form-group-compound">
@@ -64,7 +64,6 @@
         </fieldset>
       </form>
     </div>  <!-- column-two-thirds -->
-
   </div> <!-- grid row -->
 </main>
 
