@@ -9,25 +9,23 @@
 <link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
 
 <main id="content" role="main">
+  <h1 class="heading-large col-top">Check related application.</h1>
   <div class="grid-row">
-    <h1 class="heading-large col-top">Check priority of mortgage application</h1>
     <div class="column-half">
-      <h2 class="heading-medium col-top">This application:</h2>
+      <h2 class="heading-medium col-top">This application: <span class="application-info-item">{{application}}</span></h2>
       <div class="text">
         <ul class="no-bullets application-info">
           <li>Title: <span class="application-info-item">{{data.title_number}}</span></li>
-          <li>Application: <span class="application-info-item">{{application}}</span></li>
           <li>Lender: <span class="application-info-item">{{data.lender}}</span></li>
           <li>Conveyancer: <span class="application-info-item">{{data.conveyancer}}</span></li>
         </ul>
       </div>
     </div>
     <div class="column-half">
-      <h2 class="heading-medium col-top">Other Application:</h2>
+      <h2 class="heading-medium col-top">Other Application: <span class="application-info-item">{{data.related.application}}</span></h2>
       <div class="text">
         <ul class="no-bullets application-info">
           <li>Title: <span class="application-info-item">{{data.related.title_number}}</span></li>
-          <li>Application: <span class="application-info-item">{{data.related.application}}</span></li>
           <li>Lender: <span class="application-info-item">{{data.related.lender}}</span></li>
           <li>Conveyancer: <span class="application-info-item">{{data.related.conveyancer}}</span></li>
         </ul>
