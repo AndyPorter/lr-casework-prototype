@@ -6,7 +6,28 @@ var fs = require('fs');
 
 router.get('/:version/applications', function (req, res) {
   var version =  req.params.version;
-  res.render(version + '/applications', { 'version': version, 'done': 2, 'total': 8 });
+  res.render(version + '/applications', { 'version': version, 'done': 4, 'total': 8 });
+});
+
+router.get('/:version/applications/:application/process', function (req, res) {
+  var version = req.params.version;
+  var application = req.params.application;
+  var related = req.query.related;
+  var correct = req.query.correct;
+  var data = fs.readFileSync(__dirname + '/views/' + version + '/data/' + application + '.json');
+  var parsedData = JSON.parse(data);
+
+  if (related == "true") {
+    res.render(version + '/draft_register', { "data": parsedData, "application": application, 'version': version });
+  } else if (related == "false") {
+    res.render(version + '/rejected', { "data": parsedData, "application": application, 'version': version });
+  }
+
+  if (parsedData.related) {
+    res.render(version + '/related', { "data": parsedData, "application": application, 'version': version });
+  } else {
+    res.render(version + '/draft_register', { "data": parsedData, "application": application, 'version': version });
+  }
 });
 
 router.get('/:version/applications/:application/draft', function (req, res) {
@@ -17,7 +38,15 @@ router.get('/:version/applications/:application/draft', function (req, res) {
   res.render(version + '/draft_register', { "data": parsedData, "application": application, 'version': version });
 });
 
-router.get('/:version/applications/:application/completed', function (req, res) {
+router.get('/:version/applications/:application/related', function (req, res) {
+  var version = req.params.version;
+  var application = req.params.application;
+  var data = fs.readFileSync(__dirname + '/views/' + version + '/data/' + application + '.json');
+  var parsedData = JSON.parse(data);
+  res.render(version + '/related', { "data": parsedData, "application": application, 'version': version });
+});
+
+router.get('/:version/applications/:application/confirm', function (req, res) {
   var version = req.params.version;
   var application = req.params.application;
   var correct = req.query.correct;
