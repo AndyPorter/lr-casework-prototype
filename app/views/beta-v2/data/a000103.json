@@ -1,10 +1,9 @@
 {
-  "related": {
-    "application": "a000456"
-  },
   "title_number": "CL345678",
   "district": "CORNWALL",
   "class": "Title Absolute",
+  "lender": "Shawbrook Bank Limited",
+  "conveyancer": "Coldpress Solicitors",
   "register": {
     "property": [
       {
@@ -37,5 +36,11 @@
         "new": true
       }
     ]
+  },
+  "related": {
+    "application": "a000456",
+    "title_number": "CL098765",
+    "lender": "Shawbrook Bank Ltd",
+    "conveyancer": "Coldpress Solicitors"
   }
 }
