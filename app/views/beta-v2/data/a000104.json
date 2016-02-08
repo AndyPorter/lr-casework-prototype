@@ -31,17 +31,12 @@
         "new": true
       },
       {
-        "text": "Proprietor: GE MONEY HOME FINANCE LIMITED (Co. Regn. No. 592986) of Building 4, Hatters Lane, Croxley Green Business Park, Watford WD18 8YF",
+        "text": "Proprietor: N0rth3rn R0X (Co. Regn. No. 592986) of Bu1d1ng #4, Hatt3r5 Lan3, Croxl3y Gr33n Bus1n35 Park, Watford WD18 8**",
         "date": "",
         "new": true
       }
     ]
   },
-  "next": "a000104",
-  "related": {
-    "application": "a000456",
-    "title_number": "CL345678",
-    "lender": "Shawbrook Bank Ltd",
-    "conveyancer": "Coldpress Solicitors LLC"
-  }
+  "next": null,
+  "related": null
 }
