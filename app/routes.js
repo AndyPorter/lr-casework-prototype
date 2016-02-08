@@ -6,7 +6,7 @@ var fs = require('fs');
 
 router.get('/:version/applications', function (req, res) {
   var version =  req.params.version;
-  res.render(version + '/applications', { 'version': version, 'done': 2, 'total': 8 });
+  res.render(version + '/applications', { 'version': version, 'done': 4, 'total': 8 });
 });
 
 router.get('/:version/applications/:application/process', function (req, res) {
