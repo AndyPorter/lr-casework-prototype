@@ -37,10 +37,11 @@
       }
     ]
   },
+  "next": null,
   "related": {
     "application": "a000456",
-    "title_number": "CL098765",
+    "title_number": "CL345678",
     "lender": "Shawbrook Bank Ltd",
-    "conveyancer": "Coldpress Solicitors"
+    "conveyancer": "Coldpress Solicitors LLC"
   }
 }
