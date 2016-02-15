@@ -1,0 +1,30 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Digital Mortgage - Rejected{{/pageTitle}}
+{{$propositionHeader}}<a href="/" id="proposition-name">Digital Mortgage Service</a>{{/propositionHeader}}
+
+{{$content}}
+<link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <div class="mortgage-successful">
+        <h1 class="heading-large">Review Complete</h1>
+        <p class="lede">Application {{application}} on title {{data.title_number}} will not be automatically processed. This application will be available in existing casework systems for manual processing.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      {{#data.next}}
+      <a class="button button-start" href="/{{version}}/applications/{{data.next}}/process" role="button">Next Application</a>
+      {{/data.next}}
+      <br/><a href="/{{version}}/applications">Return to service homepage</a>
+    </div>
+  </div>
+</main>
+
+{{/content}}
+{{/internal_gov}}

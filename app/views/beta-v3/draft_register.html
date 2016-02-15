@@ -1,0 +1,115 @@
+{{<internal_gov}}
+
+{{$pageTitle}}Digital Mortgage - Draft Register{{/pageTitle}}
+{{$propositionHeader}}<a href="/" id="proposition-name">Digital Mortgage Service</a>{{/propositionHeader}}
+
+
+{{$content}}
+<link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+  <h1 class="heading-xlarge">
+    <span class="heading-secondary">Application {{application}}</span>
+    Has this register been drafted correctly?
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium col-top">Title <span class="application-info-item">{{data.title_number}}</span></h2>
+      <div class="register">
+        <h3 class="heading-medium">Property register</h3>
+        <p class="district">{{data.district}}</p>
+        <ol>
+          {{#data.register.property}}
+          <li>
+            <entry>
+              <p>{{text}}<br><span class="entry-date">({{date}})</span></p>
+            </entry>
+          </li>
+          {{/data.register.property}}
+        </ol>
+
+
+        <h3 class="heading-medium">Proprietorship register</h3>
+        <p class="class-of-title">{{data.class}}</p>
+        <ol>
+          {{#data.register.proprietorship}}
+          <li>
+            <entry>
+              <p>{{text}}<br><span class="entry-date">({{date}})</span></p>
+            </entry>
+          </li>
+          {{/data.register.proprietorship}}
+        </ol>
+
+        <h3 class="heading-medium">Charges register</h3>
+        <ol>
+          {{#data.register.charges}}
+          <li>
+            <entry class="new">
+              <p>{{text}}</p>
+            </entry>
+          </li>
+          {{/data.register.charges}}
+        </ol>
+      </div> <!-- end register -->
+
+
+      <form action="confirm">
+        <fieldset class="inline">
+
+          <legend>
+            <span class="form-label-bold">Has this register been drafted correctly?</span>
+          </legend>
+
+          <div class="form-group form-group-compound">
+            <label class="block-label" for="radio-indent-1">
+              <input id="radio-indent-1" name="correct" value="true" type="radio"> Yes
+            </label>
+
+            <label class="block-label" data-target="autodraft-problem" for="radio-indent-2">
+              <input id="radio-indent-2" name="correct" value="false" type="radio"> No
+            </label>
+          </div>
+
+          <div class="panel-indent js-hidden" id="autodraft-problem">
+            <label class="form-label" for="priority-error">Please describe why:</label>
+            <textarea class="form-control" style="width:100%" id="priority-error"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button">Continue</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>  <!-- column-two thirds -->
+  </div> <!-- grid row -->
+
+</main>
+
+{{/content}}
+
+
+
+{{/internal_gov}}
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$( "input#cannot-complete-application" ).click(function() {
+
+  if( $( "button#store-button" ).hasClass( "disabled" ))
+  {
+    $( "button#store-button" ).removeClass( "disabled" );
+    $( "button#complete-button" ).addClass( "disabled" );
+    $( "a#store-button-2" ).removeClass( "disabled" );
+    $( "a#complete-button-2" ).addClass( "disabled" );
+  }
+  else
+  {
+    $( "button#store-button" ).addClass( "disabled" );
+    $( "button#complete-button" ).removeClass( "disabled" );
+    $( "a#store-button-2" ).addClass( "disabled" );
+    $( "a#complete-button-2" ).removeClass( "disabled" );
+  }
+
+});
+</script>

@@ -1,0 +1,49 @@
+{
+  "title_number": "CL345678",
+  "district": "BEDFORDSHIRE",
+  "class": "Title Absolute",
+  "lender": "Shawbrook Bank Limited",
+  "conveyancer": "Coldpress Solicitors",
+  "type": "Charge application",
+  "register": {
+    "property": [
+      {
+        "text": "The Freehold land shown edged with red on the plan of the above title filed at the Registry and being 17 Kenilworth Road, Luton, LU1 1DQ.",
+        "date": "22-05-2014",
+        "new": false
+      }
+    ],
+    "proprietorship": [
+      {
+        "text": "Proprietor: SCOTT OAKES of 17 Kenilworth Road, Luton LU1 1DQ.",
+        "date": "22-05-2014",
+        "new": false
+      },
+      {
+        "text": "The price stated to have been paid on 1 May 2014 was £100,000.",
+        "date": "22-05-2014",
+        "new": false
+      }
+    ],
+    "charges": [
+      {
+        "text": "REGISTERED CHARGE dated 30 Sept 2015",
+        "date": "",
+        "new": true
+      },
+      {
+        "text": "Proprietor: SHAWBROOK BANK LIMITED (Co. Regn. No. 833282) of 86 Smeaton Drive, Hampton Park, Leeds, WY8 YUF",
+        "date": "",
+        "new": true
+      }
+    ]
+  },
+  "next": "a000104",
+  "related": {
+    "type": "Search with priority",
+    "application": "a000456",
+    "title_number": "CL345678",
+    "lender": "Shawbrook Bank Ltd",
+    "conveyancer": "Coldpress Solicitors LLC"
+  }
+}
