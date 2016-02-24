@@ -14,27 +14,32 @@
     Are these two applications related?
   </h1>
   <div class="grid-row">
-    <div class="column-half">
-      <h2 class="heading-medium col-top">This application: <span class="application-info-item">{{application}}</span></h2>
-      <div class="text">
-        <ul class="no-bullets application-info">
-          <li>Type: <span class="application-info-item">{{data.type}}</span></li>
-          <li>Title: <span class="application-info-item">{{data.title_number}}</span></li>
-          <li>Lender: <span class="application-info-item">{{data.lender}}</span></li>
-          <li>Conveyancer: <span class="application-info-item">{{data.conveyancer}}</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="column-half">
-      <h2 class="heading-medium col-top">Other Application: <span class="application-info-item">{{data.related.application}}</span></h2>
-      <div class="text">
-        <ul class="no-bullets application-info">
-          <li>Type: <span class="application-info-item">{{data.related.type}}</span></li>
-          <li>Title: <span class="application-info-item">{{data.related.title_number}}</span></li>
-          <li>Lender: <span class="application-info-item">{{data.related.lender}}</span></li>
-          <li>Conveyancer: <span class="application-info-item">{{data.related.conveyancer}}</span></li>
-        </ul>
-      </div>
+    <div class="column-three-quarters">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Application</th>
+            <th scope="col">Type</th>
+            <th scope="col">Title</th>
+            <th scope="col">Lender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{application}}</td>
+            <td>{{data.type}}</td>
+            <td>{{data.title_number}}</td>
+            <td>{{data.lender}}</td>
+          </tr>
+          <tr>
+            <td>{{data.related.application}}</td>
+            <td>{{data.related.type}}</td>
+            <td>{{data.related.title_number}}</td>
+            <td>{{data.related.lender}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
     </div>
   </div>
 
