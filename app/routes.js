@@ -4,6 +4,10 @@ var fs = require('fs');
 
 // Beta v2
 
+router.get('/beta', function (req, res) {
+  res.render('beta_index');
+});
+
 router.get('/:version/applications', function (req, res) {
   var version =  req.params.version;
   res.render(version + '/applications', { 'version': version, 'done': 4, 'total': 8 });
