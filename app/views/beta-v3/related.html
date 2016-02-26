@@ -9,6 +9,7 @@
 <link href="/public/stylesheets/beta-v1.css" media="screen" rel="stylesheet" type="text/css" />
 
 <main id="content" role="main">
+  {{#data.related.type}}
   <h1 class="heading-xlarge">
     <span class="heading-secondary">Step 1 of 2</span>
     Are these two applications related?
@@ -73,6 +74,24 @@
       </form>
     </div>  <!-- column-two-thirds -->
   </div> <!-- grid row -->
+  {{/data.related.type}}
+
+  {{^data.related.type}}
+  <h1 class="heading-xlarge">
+    <span class="heading-secondary">Step 1 of 2</span>
+    No related applications
+  </h1>
+  <div class="grid-row">
+    <div class="column-three-quarters">
+      <p>Application {{application}} has no related applications pending on the daylist.</p><br/>
+      <form action="process">
+        <div class="form-group">
+          <button type="submit" class="button" name="related" value="true">Continue</button>
+        </div>
+      </form>
+    </div>  <!-- column-two-thirds -->
+  </div> <!-- grid row -->
+  {{/data.related.type}}
 </main>
 
 {{/content}}
