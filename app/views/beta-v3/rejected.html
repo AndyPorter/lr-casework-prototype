@@ -24,6 +24,10 @@
       <p><a class="button button-start" href="/{{version}}/applications/{{data.next}}/process" role="button">Next Application</a></p>
       <p>or <a href="/{{version}}/applications">Return to service homepage</a></p>
       {{/data.next}}
+      {{^data.next}}
+      <p>There are no more applications to be reviewed.</p>
+      <p><a href="/{{version}}/applications">Return to service homepage</a></p>
+      {{/data.next}}
     </div>
   </div>
 </main>
