@@ -11,51 +11,95 @@
   </h1>
 
   <p class="lede">This is an index of all versions of prototypes produced in the BETA phase of Digital Mortgage Processing.</p>
-  <h3 class="heading-medium"><a href="beta-v1/caselist-01">Version 1</a> - 21st December 2015</h3>
+  <h3 class="heading-medium"><a href="beta-v1/caselist-01">Version 1</a></h3>
+  <p>As of 21st December 2015</p>
+  <details>
+    <summary><span class="summary">User research scenarios tested</span></summary>
+    <div class="panel panel-border-narrow">
+      <ul>
+        <li>This iteration was not put in front of users for research/testing</li>
+      </ul>
+    </div>
+  </details>
   <details>
     <summary><span class="summary">Change log</span></summary>
     <div class="panel panel-border-narrow">
       <ul>
         <li>Initial version</li>
-        <li>Iterated from final ALPHA version <a href="/quality-check-v3/list-idea-3a">here</a></li>
+        <li>Minor iteration from final ALPHA version <a href="/quality-check-v3/list-idea-3a">here</a></li>
       </ul>
     </div>
   </details>
-
-  <h3 class="heading-medium"><a href="beta-v2/applications">Version 2</a> - 9th February 2016</h3>
+  <br/><hr>
+  <h3 class="heading-medium"><a href="beta-v2/applications">Version 2</a></h3>
+  <p>Round 1 - 3rd to 16th February 2016</p>
+  <details>
+    <summary><span class="summary">User research scenarios tested</span></summary>
+    <div class="panel panel-border-narrow">
+      <ul>
+        <li>Daylist clear and no entries on the register that affect.</li>
+        <li>Daylist matches and no entries on the register that affect.</li>
+        <li>Spelling discrepancy between Official Search info and lender name. No entries on the register that affect.</li>
+        <li>Daylist clear. No entries on the register that affect. Spelling errors in one of the register entries.</li>
+      </ul>
+    </div>
+  </details>
   <details>
     <summary><span class="summary">Change log</span></summary>
     <div class="panel panel-border-narrow">
+      <p>As the previous iteration was not researched/tested, the following changes are based on UX design team peer reviews and usability critique of version 1.</p>
       <ul>
-        <li>Added service start page</li>
-        <li>Removed table of applications. All applications need to be processed so no need to choose from a list, just get one to start processing.</li>
-        <li>Where there are no related applications, process flow goes straight to draft register check.</li>
-        <li>Added page heading where single question is asked. Are these related? Is this register correct? etc.</li>
-        <li>Application currently being processed is always in sub-heading of page.</li>
-        <li>Related applications page now compares two applications side by side, highlighting the pertenant details.</li>
-        <li>Negative action on both question pages now asks the user to describe why in free text, no template.</li>
-        <li>Removed application details from right side of draft register page.</li>
-        <li>Removed infill value highlighting from draft register entries.</li>
-        <li>Removed manual mark off step from flow. Thought this was best confirmed on negative completion of process.</li>
+        <li>Added service start page. Explained what service is and is not about, so users know what to expect.</li>
+        <li>Removed table of applications. All applications need to be processed so no need to choose from a list, just get the next one to do.</li>
+        <li>Where there are no related applications, process flow goes straight to draft register check. Don't ask the user to complete redundant checks.</li>
+        <li>Added page heading where single question is asked. Are these related? Is this register correct? etc. User should be clear on what they need to do, answer the question heading.</li>
+        <li>Application currently being processed is always in sub-heading of page. Give user context to the question being asked.</li>
+        <li>Related applications page now compares two applications side by side, highlighting the pertenant details to the user.</li>
+        <li>Negative action on both question pages now asks the user to describe why in free text.</li>
+        <li>Removed application details from right side of draft register page. Discourage users from existing mindset of checking everything twice, just focus on one task per page.</li>
+        <li>Removed infill value highlighting from draft register entries. Users aren't responsible for drafting, so it's not just the infil values that are important.</li>
+        <li>Removed manual mark off step from flow. This is best confirmed on negative completion of process, clearer to users they've reach an end and why.</li>
         <li>Positive completion of application processing shows confirmation that the application on title will be automatically processed.</li>
         <li>Negative completion of application processing shows confirmation that the application on title will not be automatically processed and will be available for manual processing in existing systems.</li>
-        <li>At the end of each application processing, a next application button appears, until there are no more to process.</li>
+        <li>At the end of each application processing flow, a next application button appears, until there are no more to process, then the user can return to the service home page.</li>
       </ul>
     </div>
   </details>
-
-  <h3 class="heading-medium"><a href="beta-v3/applications">Version 3</a> - Work in Progress</h3>
+  <br/><hr>
+  <h3 class="heading-medium"><a href="beta-v3/applications">Version 3</a></h3>
+  <p>Round 2 - 17th February to 1st March 2016</p>
+  <details>
+    <summary><span class="summary">User research scenarios tested</span></summary>
+    <div class="panel panel-border-narrow">
+      <ul>
+        <li>No researched planned.</li>
+      </ul>
+    </div>
+  </details>
   <details>
     <summary><span class="summary">Change log</span></summary>
     <div class="panel panel-border-narrow">
+      <p>The following changes were made based on user research and testing conducted in Weymouth office on 9th and 10th of February 2016. Evidence <a href="https://drive.google.com/open?id=0B3SVcYxUKHfZU0VOaFZZdG9YUGs">here</a>.</p>
       <ul>
         <li>Removed completion count and percentage. This will appear on a dashboard style view for managers, not all users.</li>
-        <li>Always show related applications step even if no related applications. Keep the experience for each application process flow consistent.</li>
-        <li>Add "What happens next" to confirmation screens (postive and negative).</li>
-        <li>Related applications layout change to a tabular format. More easy to scan and compare information.</li>
-        <li>Removed conveyancer from related applications.</li>
-        <li>Changed confirmation screen text for final application, making it clear there are no more to do.</li>
-        <li>Added "Step x of y" to processing pages to show progress.</li>
+        <li>Always show related applications step even if no related applications. Keep the users' experience for each application process flow consistent.</li>
+        <li>Add "What happens next" to confirmation screens (postive and negative). Make it clear to the user what has happened and what will happen now. Give them cause to read this page for useful information.</li>
+        <li>Related applications layout change to a tabular format. More easy to visually scan and compare information.</li>
+        <li>Removed conveyancer from related applications. Charge proetects the interests of the lender, so differences in conveyancer are acceptable.</li>
+        <li>Changed confirmation screen text for final application, making it clear there are no more to do. When there are no more to do user is told they have finished.</li>
+        <li>Added "Step x of y" to processing pages to give user a clear indication of progress made.</li>
+      </ul>
+    </div>
+  </details>
+  <br/><hr>
+  <h3 class="heading-medium">General</h3>
+  <details>
+    <summary><span class="summary">Outstanding Issues</span></summary>
+    <div class="panel panel-border-narrow">
+      <ul>
+        <li>Consistent internal service style inc. header, typography, layout, colour palette, UI components. Work in progress.</li>
+        <li>Users generally uncomfortable with why they are having to do this. Not a recognisable problem as does not fit current process / culture / mental models.</li>
+        <li>Not a <b>USER</b> need to perform this service. Stakeholder / business needs.</li>
       </ul>
     </div>
   </details>
